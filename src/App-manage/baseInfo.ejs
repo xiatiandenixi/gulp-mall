@@ -1,0 +1,104 @@
+            <div class="basic-message">              
+                  <div class="left-upload">
+                    <div id="upload-image">
+                      <% if(data.mer.logoImg) { %> 
+                      <img src=<%=fileUrl + "/download?attachId=" +  data.mer.logoImg %> alt="" id="imgid" data-attachId=<%=data.mer.logoImg %>>
+                      <% }else{ %>
+                        <img src="../assets/images/grounding/defaultLogo.png" alt="" id="imgid">
+                      <% } %>
+                    </div>                    
+                    <input type="file" id="upload">
+                    <button id="logo-upload">上传显示logo</button>        
+                    <p>建议: 285 x 175像素 且不超过1M</p>
+                  </div>
+                  <div class="right-fill"> 
+                    <ul>
+                      <li>
+                        <label for="">一级分类</label> 
+                      <div class="kind-one">
+                        <select name="" id="" class="kind-parent"> 
+                          <option value="">全部</option>                
+                      </select>
+                        <i class="fa fa-angle-down"></i>
+                      </div>
+                      <span style="display: inline-block;margin-left: 30px; text-align: right; color: #3F3F3F; padding-right: 10px;  font-size: 14px;" >二级分类</span>
+                      <div class="kind-two">
+                        <select name="" id="" class="kind-sub"></select>
+                        <i class="fa fa-angle-down"></i>
+                      </div>
+                      </li>
+                      <li>
+                        <label for="showSubtitles">显示副标题</label>
+                        <input  class="ipt" type="text" id="showSubtitles" name="subhead" issent=true value=<%=data.mer.subhead  %>>                       
+                      </li>
+                      <li>
+                        <label for="summarize">概述</label>
+                        <textarea id="summarize" cols="30" rows="10" name="remark" issent=true><%=data.mer.remark.trim()%></textarea>                      
+                      </li>
+                        <li>
+                          <label for="">详情</label>
+                          <div class="text-edit clearfix"> 
+                            <script id="editor" type="text/plain" style="width: 589px; height: 189px;"></script>
+                        </div>                         
+                        </li>
+                        <li>                   
+                          <label for="">应用标题图</label>
+                          <div class="bannerImg" data-attachId=<%=data.mer.bannerImg %>>
+                              <div>
+                              <% if(data.mer.bannerImg){ %>
+                                <img src=<%=fileUrl + "/download?attachId=" + data.mer.bannerImg %>  alt="">                                
+                              <% }else{ %>
+                                 <img src="../../static/images/grounding/defaultBanner.png" alt="" >
+                              <% } %>
+                              </div>
+                             <div class="uploadImg" style="margin-top: 10px;">
+                            <button id="uploadBanner" >点击上传图片</button>                           
+                            建议:  1280 x 200像素 且不超过1M
+                          </div>
+                          </div>                         
+                        </li>
+                        <li class="six-img" data-result = <%= data.mer.resourceAttachIds %>>
+                          <label for="">商品截图</label>
+                          <%  if(data.mer.resourceAttachIds){%>  
+                          <dl class="img-active">
+                           <img id="defaultCarousel" src="../../static/images/grounding/carouselPic.png" alt="" style="display: none;">    
+                           <div class="imgs" data-attachId=<%=data.mer.resourceAttachIds %> >                      
+                              <% var result = data.mer.resourceAttachIds ? data.mer.resourceAttachIds.split(",") : [];  
+                              for(var i = 0; i < result.length; i++){ %>
+                                  <% if(result.length) {%> 
+                                <dt data-id=<%=result[i]%>>
+                                  <img src=<%=fileUrl + "/download?attachId=" + result[i] %> alt="">
+                                  <i class="fa fa-minus-circle del" ></i>
+                                </dt>
+                                <% }} %>      
+                           </div>              
+                            <div class="uploadImg">
+                            <button id="uploadCarousel">点击上传图片</button>
+                             <p> 建议: 400 x 340像素 且不超过1M</p>
+                          </div>
+                          </dl> 
+                          <%}else{%>                          
+                            <dl class="img-active">
+                            <img id="defaultCarousel" src="../../static/images/grounding/carouselPic.png" alt="">   
+                           <div class="imgs">    
+                           </div>              
+                            <div class="uploadImg">
+                            <button id="uploadCarousel">点击上传图片</button>
+                             <p> 建议: 400 x 340像素 且不超过1M</p>
+                          </div>
+                          </dl> 
+                          <% } %>                        
+                        </li>                       
+                        <li>
+                          <label for="contact">联系方式</label>
+                          <input class="ipt" type="text" id="contact" name="contactWay" issent=true value=<%=data.mer.contactWay %>>                          
+                        </li>
+                    </ul>
+                  </div>                                 
+                </div>
+                <div class="step-btn" id= "basicInfo">
+                  <button>上一步</button>
+                  <button>下一步</button>
+                </div>  
+              
+              

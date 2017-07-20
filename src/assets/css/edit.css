@@ -1,0 +1,109 @@
+#page .paginationjs-next , #page .paginationjs-prev  {  
+  border-radius: 50%;
+  background: #f8f8f8;
+  margin: 0 5px;
+
+}
+#page .paginationjs .paginationjs-pages li {
+  margin: 0 5px;
+  border: none;
+}
+#page .paginationjs .paginationjs-pages li>a {
+  background: transparent;
+ 
+}
+#page .paginationjs .paginationjs-pages li.active>a {
+  background: pink;
+  margin: 0 5px;
+  border-radius: 50%;
+}
+.layout header .sign-form,.layout header .login-form { 
+  width: 550px;
+  height: 500px;
+  background: #fff;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 10px;
+  position: absolute;
+  margin-left: -300px;
+  z-index: 100;
+  left: 50%;
+  top: 150%;
+  text-align: center;
+}
+.layout header .sign-form {
+  display: none;
+}
+.layout header .login-form{
+  display: none;
+  height: 400px;
+}
+.layout header  h4 {
+  height: 60px;
+  font-size: 20px;
+  line-height: 60px;
+  width: 80%;
+  margin: auto;
+  text-align: left;
+
+}
+.layout header  h4 i{
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+}
+.layout header  .detail{
+  margin: auto;
+  height: 60px;
+  width: 80%;  
+}
+.layout header .detail input{
+  width: 320px;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 40px;
+  outline: none;
+  outline-style: none;
+  border: 1px solid #999999;
+  padding-left: 10px;
+}
+.layout header  .detail input:focus {
+  border-color: #e50011;
+}
+.layout header .detail label {
+  width: 100px;
+  display: inline-block;
+  text-align: left;
+  font-size: 14px;
+}
+.layout header  .sign {
+  margin-top: 30px;
+}
+.layout header .sign-up,.layout header .sign-in{
+  width: 100px;
+  height: 40px;
+  color: #e50011;
+  outline-style: none;
+  border: none;
+  background: transparent;
+}
+.layout header .sign-up{
+  background-color: #e50011;
+  border-radius: 40px;
+  color: #fff;
+}
+.layout header .login-form .sign-up {
+  background: transparent;
+  border-radius: 0;
+  color: #e50011;
+}
+.layout header .login-form .sign-in {
+  background-color: #e50011;
+  border-radius: 40px;
+  color: #fff;
+  margin-right: 10px;
+}
+.layout header .login-form .sign {
+  margin-top: 40px;
+}
+

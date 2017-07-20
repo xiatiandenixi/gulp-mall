@@ -1,0 +1,308 @@
+.appTitle {
+  line-height: 42px;
+  margin-left: 56px;
+  font-family: MicrosoftYaHei;
+  font-size: 18px;
+  color: #666666;
+}
+
+#tem {
+  display: none;
+}
+
+.get-data {
+  position: relative;
+  width: 100%;
+  height: 750px;
+}
+
+.center-img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  width: 200px;
+  height: 200px;
+}
+
+.center-img p {
+  font-size: 20px;
+  color: red;
+  margin-bottom: 20px;
+}
+
+
+
+.layout section {
+  background-color: #f8f8f8;
+}
+
+.layout aside {
+  width: 200px;
+  float: left;
+  background-color: #fff;
+  height: 788px;
+  margin-top: 5px;
+}
+
+.layout aside .kind {
+  margin-top: 30px;
+}
+
+.layout aside .kind a {
+  position: relative;
+}
+
+.layout aside .kind i {
+  position: absolute;
+  left: 38px;
+  top: 9px;
+}
+
+.layout aside .title li a.current {
+  color: #ccc;
+}
+
+.kind-children li:first-child {
+  margin-top: 10px;
+}
+
+.layout aside .title h4 {
+  background: url("../images/cloud/cloud-icon.png") no-repeat 10% center;
+  background-color: #dd3730;
+  width: 200px;
+  height: 46px;
+  text-align: center;
+  line-height: 46px;
+  color: white;
+  font-weight: 700;
+}
+
+.layout .title p {
+  background-color: #fff;
+  width: 100%;
+  height: 30px;
+}
+
+.layout aside li:hover {
+  border: 0;
+  border-left: 5px solid #DD3730;
+  background: #f8f8f8;
+}
+
+.layout aside li:hover a {
+  margin-left: -5px;
+  color: #000;
+}
+
+.layout aside .kind:hover {
+  border: none;
+  border-top: 1px solid #f8f8f8;
+  background: #fff;
+}
+
+.layout aside .kind:hover a {
+  margin-left: 0px;
+  color: #666;
+}
+
+.layout aside .title .all a {
+  font-weight: 700;
+  color: #DD3730;
+}
+
+
+.layout aside ol {
+  margin-left: 25px;
+}
+
+.layout aside ol li {
+  padding-left: 30px;
+  height: 30px;
+  line-height: 20px;
+  text-align: left;
+}
+
+.layout .aside-ul {
+  background-color: #fff;
+}
+
+.layout .aside-ul li {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-align: left;
+  padding-left: 40px;
+  width: 100%;
+  height: 38px;
+  line-height: 38px;
+}
+
+.layout .kind {
+  border-top: 1px solid #f8f8f8;
+  border-bottom: 1px solid #f8f8f8;
+}
+
+.layout .aside-ul li a {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  text-align: left;
+}
+
+.layout .children {
+  margin-right: 0
+}
+
+
+.first-menu span {
+  display: inline-block;
+  width: 100%;
+  padding-left: 40px;
+  height: 38px;
+  line-height: 38px;
+}
+
+.first-menu span:hover {
+  border: 0;
+  border-left: 5px solid red;
+  background: #f8f8f8;
+}
+
+.first-menu span:hover a {
+  margin-left: -5px;
+  color: #000;
+}
+
+.second-menu {
+  display: none;
+  width: 100%;
+  text-align: center;
+}
+
+.second-menu li {
+  line-height: 38px;
+  height: 38px;
+}
+
+.layout article {
+  overflow: hidden;
+}
+
+#product {
+  margin: 0 -24px 12px 56px;
+  background-color: white;
+}
+
+.layout #product ul {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  height: 750px;
+ /* width: 950px;
+  margin: auto; */
+  padding-top: 22px;
+  width: 100%;
+  margin: 0 4%;
+  /*padding: 0 30px;*/
+}
+
+.layout #product ul li {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-align: center;
+  width: 249px;
+  height: 216px;
+  margin: 12px 30px 12px 30px;
+  overflow: hidden;
+  float: left;
+  position: relative;
+  border: 1px #f1ecec solid;
+}
+
+.layout #product ul li a {
+  display: inline-block;
+}
+
+
+.layout #product ul li a img {
+  width: 249px;
+  height: 175px;
+}
+
+
+
+.layout #product .ols {
+  background-color: #fff;
+  height: 40px;
+  line-height: 40px;
+  padding-left: 15px;
+}
+
+
+
+.layout #product .ols .star {
+  vertical-align: middle;
+  display: inline-block;
+  float: left;
+  width: 200px;
+}
+
+
+
+
+.layout #product .ols .comment {
+  float: right;
+  vertical-align: middle;
+  display: inline-block;
+  margin-top: -4px;
+  margin-right: 17px;
+}
+
+
+
+
+.layout #product .favorite {
+  display: none;
+  padding: 20px;
+  text-align: center;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background-color: #666666;
+  opacity: 0.9;
+}
+
+.layout #product .favorite p {
+  text-indent: 2em;
+  width: 100%;
+  height: 80%;  
+  text-align: left;
+  color: white;
+}
+
+
+
+.layout #product .favorite a {
+  border: 1px solid #fff;
+  border-radius: 5px;
+  margin-left: 10px;
+  width: 90px;
+  height: 30px;
+  line-height: 30px;
+  color: #fff;
+  display: inline-block;
+  text-align: center;
+}
+
+.layout #product .favorite a i {
+  margin-right: 5px;
+  margin-left: 5px;
+}
+
+.layout section #page {
+  margin-top: 10px;
+  float: right;
+}

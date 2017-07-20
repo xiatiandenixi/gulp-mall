@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+   <link rel="shortcut icon" href="../assets/images/favicon.ico">
+  <link rel="stylesheet" href="../assets/js/font/css/font-awesome.css">
+  <link rel="stylesheet" href="../assets/js/jQueryPage/page.css">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <!-- <link rel="stylesheet" href="../static/css/order.css"> -->
+  <link rel="stylesheet" href="../assets/css/cloud.css">
+  <link rel="stylesheet" href="../assets/js/jquery-toaster/toastr.css">
+  <title>链融云平台</title>
+</head>
+<body>
+<div class="layout">
+  <div class="header">
+     <header>
+  <div class="logo">
+    <a href="../index.html">链融云</a>
+  </div>
+  <div class="nav">
+    <ul>
+      <li><a href="../index.html" >首页</a></li>
+      <li  class="active"><a href="javascript:void(0)">云市场</a></li>
+      <li><a href="../customer.html">客户</a></li>
+      <li><a href="../supplier.html">伙伴</a></li>
+      <li><a href="../customerCase.html">客户案例</a></li>
+    </ul>
+    <div class="search">
+      <input type="search" placeholder="搜索">
+      <i></i> 
+    </div>
+    <div class="login">
+      <a href="javascript:void(0)">登录</a>
+      <a href="../login/register.html">注册</a>
+    </div>
+      <div class="personalInfor">
+     <h4 class="showUser"> <img src="../assets/images/index/user.png" style="border-radius:50%;width:48px;height:48px;vertical-align: middle;margin-right:5px;"><span></span><i class="fa fa-angle-up"></i></h4>
+     <div class="account">
+       <p class="on"><a href="javascript:void(0)">账号设置</a></p>
+       <p><a href="" class="withDraw">退出账号</a></p>
+     </div>   
+   </div>    
+  </div> 
+</header>
+  </div>   
+    <!--   <header>
+      <div class="logo">
+        <a href="../index.html">链融云</a>
+        <h1>云市场</h1>
+      </div>
+      <div class="login" style="margin-right: -10px;">
+        <div class="search">
+          <input type="search" placeholder="搜索">
+          <i></i>
+        </div>
+        <div class="user">
+          <ul >
+            <li>
+              <button class="custorm">我是客户</button>
+            </li>
+            <li>
+              <button class="sure">提供商认证</button>
+            </li>
+            <li>              
+              <a href="login/login.html">登录</a>
+              <a href="login/register.html">注册有礼</a>      
+            </li>
+          </ul>          
+        </div>
+      </div>
+    </header> -->
+    <div class="banner">
+      <img src="../assets/images/cloud/cloudBanner.jpg" alt="" width=100%>
+    </div>
+    <section class="clearfix w">
+      <aside>
+        <div class="title">
+          <h4>云市场</h4>
+          <p></p>          
+          <ul class="aside-ul">
+            <li>
+              <a href="#all">全部</a>
+            </li>
+            <li><a href="#hot">热门应用</a></li>
+            <li><a href="#recent">新应用</a></li>
+            <li class="kind">
+            <a href="javascript:void(0);">分类&nbsp;&nbsp;<i class="fa fa-sort-desc"></i></a>  
+            </li>          
+          </ul>
+          <!-- <div class="categoryList"> -->
+            <div class="first-menu">
+              <!-- <div class="categoryParent">
+                <span><a href="javascript:void(0)">融资租赁</a></span>
+                <ul class="second-menu">
+                 <li><a href="javascript:void(0)">融资租赁1</a></li>
+                 <li><a href="javascript:void(0)">融资租赁2</a></li>
+                </ul>
+              </div> -->
+              
+            </div>
+             <!-- <ol class="kind-children"> -->
+            <!-- <li><a href="javascript:void(0)">融资租赁</a></li>
+            <li><a href="javascript:void(0)">金融服务</a></li>
+            <li><a href="javascript:void(0)">服务与金融</a></li> -->
+          <!-- </ol> -->
+
+          
+          <!-- </div>          -->
+          </div>
+      </aside>
+      <article>     
+          <h2 class="appTitle">全部</h2>
+          <div class="content"></div>
+         <div id="product" >
+
+
+         </div>
+         <div id="tem">
+           <div class="get-data">
+              <div class="center-img">
+                  <p>暂时没有应用.....</p>
+                 <!-- <img src="../static/images/yellowman.png" alt=""> -->
+                 
+              </div>            
+           </div>  
+         </div>               
+      </article>      
+    </section>
+    <div style="background: #fff; " class="clearfix w"> <ul class="page" maxshowpageitem="5" pagelistcount="9"  id="page"></ul></div> 
+    <footer>
+      <div class="clearfix">
+        <dl>
+        <dt><a href="javascript:void(0)">产品咨询</a></dt>
+        <dd><a href="javascript:void(0)">新闻中心</a></dd>
+        <dd><a href="javascript:void(0)">法律条款</a></dd>
+      </dl>
+      <dl>
+        <dt><a href="javascript:void(0)">解决方案</a></dt>
+        <dd><a href="javascript:void(0)">客服服务</a></dd>
+      </dl>
+      <dl>
+        <dt><a href="javascript:void(0)">关于我们</a></dt>
+        <dd><a href="javascript:void(0)">意见反馈</a></dd>
+        <dd><a href="javascript:void(0)">联系我们</a></dd>
+      </dl>
+      <dl style="text-align: center; margin-left: 30px;">
+        <dt>扫一扫，关注我们</dt>
+        <dd>
+          <img src="../assets/images/index/qr.jpg" width="122" height="122" alt="">
+        </dd>
+      </dl>
+      <dl>
+        <dt><img src="../assets/images/index/tel.png" alt=""><h4>服务热线（工作时间：8:30-17:00）<p>010-62432033</p></h4></dt>
+        <dd>
+          地址：北京市海淀区北清路68号用友软件园
+          <p>邮箱：imfbp@youyou.com</p>
+     </dd>
+      </dl>
+      </div>      
+      <p>Copyright.@2013-2016imfbp.com.All Rights Reserved.用友金融 版权 </p>
+      <p><img style="vertical-align: middle;" src="../assets/images/index/bitmap.png" alt="">京ICP13042244号</p>
+    </footer>
+     <!-- <a href="#"><i class=" fa fa-heart"></i>添加收藏</a> -->
+</div>
+</body>
+<script src="../assets/js/jquery/jquery.js"></script>
+<script src="../assets/js/raty/jquery.raty.js"></script>
+<script src="../assets/js/jQueryDotdotdot/jquery.dotdotdot.min.js"></script>
+<script src="../assets/js/jquery-toaster/toastr.js"></script>
+<script src="../assets/js/jquery-toaster/toastr.config.js"></script>
+<script src="../assets/js/jquery.cookie.js"></script>
+<script src="../assets/js/raty/user.raty.js"></script>
+<script src="../assets/js/ejs/ejs.min.js"></script>
+<script src="../assets/js/jQueryPage/page.js"></script>
+<script src="../assets/js/route.js"></script>
+<script src="../assets/js/tool.js"></script>
+<script src="../assets/js/cloud.js"></script>
+<script src="../assets/js/common.js"></script>
+</html>

@@ -1,0 +1,206 @@
+#providers{
+ margin-left: 30px;
+ margin-top: -30px;
+}
+#providers .secondMenu{
+    display: none;
+    width:180px;
+  }
+#providers .secondMenu>li p{
+  height:26px;
+  text-indent:2em;
+}
+#providers .collection{
+  margin-top:50px;
+ }
+ #providers .collection p{
+   display:inline-block;
+   margin-right:12px;
+ }
+ #providers .collection label{
+  font-size:14px;
+  color: #999;
+  width:60px;
+  height:20px;
+  margin-right: 20px;
+ }
+ #providers .collectionBottom label{
+  font-size:14px;
+ }
+ #providers .collection input{
+    color: black;
+    font-size: 12px;
+    padding-left: 10px;
+    width: 137px;
+    height: 33px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    outline: none;
+ }
+ #providers .collection .query{
+    display: inline-block;
+    width: 110px;
+    height: 36px;
+    background: #1BA8ED;
+    color: #fff;
+    cursor: pointer;
+    text-align: center;
+    border-radius: 4px;
+    line-height: 36px;
+    margin-top: 8px;
+    margin-right:30px;
+    font-weight: 700;
+ }
+ #providers .collection .collectionTop{
+   height:50px;
+   background:#fff;
+ }
+ #providers .collection .collectionBottom{
+  margin-top:2px;
+  height:60px;
+  line-height:60px;
+  background:#fff;
+  padding-left:30px;
+ }
+ 
+
+ #providers .tableItem{
+    border-collapse: collapse;
+ }
+ #providers .tableLists{
+  position: relative;
+  margin-top:20px;
+  padding:5px 0px;
+  background:#fff;
+ }
+ #providers .tableLists thead tr{
+  background:#F5F8FA;
+ }
+ #providers .tableLists thead th{
+  width:139px;
+  text-align:center;
+  height:36px;
+  line-height:36px;
+  border:1px solid #CED0DA;
+  background: #F5F8FA;
+  border-right:none;
+  font-size:14px;
+  color:#999;
+ }
+ #providers .tableLists thead th.on{
+  border-right:1px solid #CED0DA;
+ }
+ #providers .tableLists tbody td{
+  border:1px solid #CED0DA;
+  border-right:none;
+  height:36px;
+  line-height:36px;
+  text-align:center;
+ }
+ #providers .tableLists tbody td.on{
+  border-right:1px solid #CED0DA;
+ }
+ #providers .tableItem button{
+    display:inline-block;
+    width:70px;
+    height:32px;
+    background:#00A5E3;
+    color:#fff;
+    cursor:pointer;
+    text-align:center;
+    border-radius:10px;
+    line-height:32px;
+    border:1px solid #ccc;
+    outline:none;
+ }
+ #providers .choice{
+  float: left;
+  margin-right:0px 30px;
+  height:50px;
+  line-height:50px;
+  font-size:12px;
+  border-right:1px solid #F8F8F8;
+  margin-left:30px;
+ }
+
+#providers .auditDialog{
+  position:absolute;
+  left: 405px;
+  top: 145px;
+  width:310px;
+  height:200px;
+  padding:20px;
+  border: 1px solid #ccc;
+  border-radius:4px;
+  background:#f8f8f8;
+  display:none;
+  z-index: 1;
+}
+#providers .auditDialog p{
+  margin-bottom: 30px;
+}
+#providers .auditDialog span{
+  margin-left:55px;
+}
+#providers .auditButtons{
+  position:absolute;
+  right: 15px;
+  bottom: 8px;
+}
+#providers .auditButtons button{
+  width: 70px;
+  height: 30px;
+  line-height: 30px;
+  margin-left:10px;
+  font-size:16px;
+  background:#00a5e3;
+  color:#fff;
+  border:none;
+  border-radius:2px;
+  border:1px solid #ccc;
+  outline:none;
+  cursor:pointer;
+}
+
+#providers select{  
+    color: #999;  
+    font-size: 14px;
+    border:none;
+    cursor:pointer;
+    width: 100px;
+    outline: none;
+    padding:10px;
+}
+#providers .userId{
+  cursor:pointer;
+  font-weight: bold;
+}
+ ::-webkit-input-placeholder{
+    font-size:12px;
+    color: #999; 
+  }
+  :-moz-placeholder{
+    font-size:12px;
+    color: #999; 
+  }
+  ::-moz-placeholder{
+    font-size:12px;
+    color: #999; 
+  }
+  :-ms-input-placeholder{
+    font-size:12px;
+    color: #999;  
+  }
+
+#providers select {
+   /*为下拉小箭头留出一点位置，避免被文字覆盖*/
+   /*// padding-right:34px;*/
+   /*// padding-left: 10px;*/
+   /*将默认的select选择框样式清除*/
+   appearance:none;
+   -moz-appearance:none;
+   -webkit-appearance:none;
+   background: url("../../images/arrow.png") no-repeat scroll 90% center transparent;
+   height: 50px;
+}
+#providers select::-ms-expand { display: none; }

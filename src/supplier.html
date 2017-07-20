@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="shortcut icon" href="assets/images/favicon.ico">
+    <link rel="stylesheet" href="assets/js/font/css/font-awesome.css">
+    <link rel="stylesheet" href="assets/js/jQueryPage/page.css">
+    <link rel="stylesheet" href="assets/css/base.css">
+    <!-- <link rel="stylesheet" href="../static/css/order.css"> -->
+    <link rel="stylesheet" href="assets/css/cloud.css">
+    <link rel="stylesheet" href="assets/css/customer.css">
+    <link rel="stylesheet" href="assets/js/jquery-toaster/toastr.css">
+    <title>链融云平台</title>
+</head>
+<body>
+<div class="layout">
+    <div class="header">
+         <header>
+        <div class="logo">
+            <a href="index.html">链融云</a>
+        </div>
+        <div class="nav">
+            <ul>
+                <li><a href="index.html">首页</a></li>
+                <li><a href="cloud/cloud.html#all">云市场</a></li>
+                <li><a href="./customer.html">客户</a></li>
+                <li class="active"><a href="javascript:void(0);">伙伴</a></li>
+                <li><a href="./customerCase.html">客户案例</a></li>
+            </ul>
+            <div class="search">
+                <input type="search" placeholder="搜索">
+                <i></i>
+            </div>
+            <div class="login">
+                <a href="javascript:void(0)">登录</a>
+                <a href="login/register.html">注册</a>
+            </div>
+            <div class="personalInfor">
+                <h4 class="showUser"><img src="assets/images/index/user.png"
+                                          style="border-radius:50%;width:48px;height:48px;vertical-align: middle;margin-right:5px;"><span></span><i
+                        class="fa fa-angle-up"></i></h4>
+                <div class="account">
+                    <p class="on"><a href="javascript:void(0)">账号设置</a></p>
+                    <p><a href="" class="withDraw">退出账号</a></p>
+                </div>
+            </div>
+        </div>
+    </header>
+    </div> 
+
+    <section class="clearfix">
+        <div class="banner">
+            <div class="banner_img">
+                <img src="assets/images/customer/cusbanger.jpg" alt="">
+            </div>
+            <div class="banner_text">
+                <h2>共同打造社会化商业生态圈</h2>
+                <p>立足于用友全产业链优势，共享技术、联合推广、深度合作、携手共赢</p>
+                <h2></h2>
+                <p></p>
+                <div class="btn-group">
+                    <button type="button" class="btn_login" id="login">伙伴登录</button>
+                    <button type="button" class="btn_reg" id="reg" style="display: none;">伙伴入驻</button>
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <h2>为什么加入我们</h2>
+            <div class="custom_info grounding">
+                <div class="big_card">
+                    <div>
+                        <img src="assets/images/customer/icon04.png" alt="">
+                        <h3>联合推广</h3>
+                        <p>基于用友品牌的影响力，领先的云计算技术和服务，帮您快速提高市场竞争力，促进业务的快速发展和业绩上升</p>
+                    </div>
+                    <div>
+                        <img src="assets/images/customer/icon02.png" alt="">
+                        <h3>技术支持</h3>
+                        <p>依托iFBP云计算、移动和大数据技术平台，共享企业互联网化基础设施，降低成本、提升效率</p>
+                    </div>
+                    <div>
+                        <img src="assets/images/customer/icon08.png" alt="">
+                        <h3>深度合作</h3>
+                        <p>品牌、经验、战略合作、深度指导、风险共担、收益共享，不做一次性生意</p>
+                    </div>
+                    <div>
+                        <img src="assets/images/customer/icon06.png" alt="">
+                        <h3>富生态</h3>
+                        <p>企业数据互通，形成互联网企业生态</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="app-process">
+            <h2>申请流程</h2>
+            <div class="steps">
+                <div class="left">
+                    <div class="step">
+                        <section  class="content">
+                            <h3><span class="circle">1</span>申请入驻</h3>
+                            <p>提交申请资料</p>
+                            <img src="assets/images/customer/icon01.png" alt="">
+                        </section>
+                    </div>
+                    <div class="step">
+                        <section class="content">
+                            <h3><span class="circle">3</span>发布应用</h3>
+                            <p>发布您的云应用、云服务、移动应用到链融云 云市场，数万企业千万用户的大商机</p>
+                            <img src="assets/images/customer/icon03.png" alt="">
+                        </section>
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="step">
+                        <section  class="content">
+                            <h3><span class="circle">2</span>应用接入</h3>
+                            <p>接入链融云商业运营，只需集成少量代码，或无需任何修改</p>
+                            <img src="assets/images/customer/icon07.png" alt="">
+                        </section>
+                    </div>
+                    <div class="step">
+                        <section class="content">
+                            <h3><span class="circle"> 4</span>商业运营</h3>
+                            <p>灵活的商业工具（商务策略、定价、订单、推广、商业分析......）让您专注于业务本身，降低运营成本</p>
+                            <img src="assets/images/customer/icon05.png" alt="">
+                        </section>
+                    </div>
+                </div>
+
+
+
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="clearfix">
+            <dl>
+                <dt><a href="javascript:void(0)">产品咨询</a></dt>
+                <dd><a href="javascript:void(0)">新闻中心</a></dd>
+                <dd><a href="javascript:void(0)">法律条款</a></dd>
+            </dl>
+            <dl>
+                <dt><a href="javascript:void(0)">解决方案</a></dt>
+                <dd><a href="javascript:void(0)">客服服务</a></dd>
+            </dl>
+            <dl>
+                <dt><a href="javascript:void(0)">关于我们</a></dt>
+                <dd><a href="javascript:void(0)">意见反馈</a></dd>
+                <dd><a href="javascript:void(0)">联系我们</a></dd>
+            </dl>
+            <dl style="text-align: center; margin-left: 30px;">
+                <dt>扫一扫，关注我们</dt>
+                <dd>
+                    <img src="assets/images/index/qr.jpg" width="122" height="122" alt="">
+                </dd>
+            </dl>
+            <dl>
+                <dt><img src="assets/images/index/tel.png" alt="">
+                <h4>服务热线（工作时间：8:30-17:00）<p>010-62432033</p></h4>
+                </dt>
+                <dd>
+                    地址：北京市海淀区北清路68号用友软件园
+                    <p>邮箱：imfbp@youyou.com</p>
+                </dd>
+            </dl>
+        </div>
+        <p>Copyright.@2013-2016imfbp.com.All Rights Reserved.用友金融 版权 </p>
+        <p><img style="vertical-align: middle;" src="assets/images/index/bitmap.png" alt="">京ICP13042244号</p>
+    </footer>
+</div>
+</body>
+<script src="assets/js/jquery/jquery.js"></script>
+<script src="assets/js/jquery.cookie.js"></script>
+<script src="assets/js/tool.js"></script>
+<script src="assets/js/common.js"></script>
+<script src="assets/js/jquery-toaster/toastr.js"></script>
+<script src="assets/js/jquery-toaster/toastr.config.js"></script>
+<script type="text/javascript">
+     $(function(){
+        if(!!$.cookie("_A_P_loginName")){
+            $.ajax({
+                 type: "GET",
+                 url: "/ifbp-bop-web/user/getUser",
+                 dataType: "json",
+                 success:function(data){
+                    console.log(data);
+                    data = data.data;                
+                    if (data.list_user_auth == '0'){                   
+                       $('#login').css('display','none');
+                        $('#reg').css('display','inline-block');
+                        $("#reg").click(function(){                            
+                            gotoSupplierApply();
+                        });
+                    }else if (data.list_user_auth == '1'){
+                         if(data.list_dev_status == '1'){
+                             $('#login').html('进入伙伴门户')
+                             $("#login").click(function(){
+                                gotoSupplierApply();
+                                //window.location.href="./App-manage/grounding.html#getApp";
+                             });
+                             $('#reg').css('display','none');
+                         }else{
+                            $('#login').css('display','none');
+                            $('#reg').css('display','inline-block');
+                            $("#reg").click(function(){                            
+                                gotoSupplierApply();
+                            });
+                         }                    
+                                            
+                    }else if (data.list_user_auth == '2'){                  
+                        $('#login').css('display','none');
+                        $('#reg').css('display','inline-block');
+                        $("#reg").click(function(){                            
+                            gotoSupplierApply();
+                        });
+                    }else if (data.list_user_auth == '3'){
+                         if(data.list_dev_status == '1'){
+                             $('#login').html('进入伙伴门户')
+                             $("#login").click(function(){
+                                gotoSupplierApply();
+                                //window.location.href="./App-manage/grounding.html#getApp";
+                             });
+                             $('#reg').css('display','none');
+                         }else{
+                            $('#login').css('display','none');
+                            $('#reg').css('display','inline-block');
+                            $("#reg").click(function(){                            
+                                gotoSupplierApply();
+                            });
+                         }                   
+                    }
+                 },
+                 error:function(error){
+                    console.log(error)
+                 }
+             });
+        }else{
+             $("#login").click(function(){
+                loginto();
+            });
+        }
+     });
+
+   function gotoSupplierApply(){
+        $.ajax({
+                 type: "POST",
+                 url: "/ifbp-bop-web/user/postGotoSupplierApply",
+                 dataType: "json",
+                 success:function(data){           
+                    console.log(data);                  
+                    if(data.success){
+                        window.location.href= data.data.url;
+                    }else{
+                        toastr.warning(data.error.errorMessage);
+                    }
+                    
+                 },
+                 error:function(error){
+                    console.log(error)
+                 }
+        });
+
+    }
+ </script>
+</html>

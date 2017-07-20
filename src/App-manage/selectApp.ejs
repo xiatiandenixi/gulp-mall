@@ -1,0 +1,71 @@
+                <div class="select-app">
+                  <div class="exist-app">
+                    <h4>选择已有的应用</h4>
+                    <button>创建应用</button>
+                  </div>
+                  <div class="app-list">
+                    <div class="field">
+                      领域 
+                      <div>
+                        <select name="" id="">
+                        <option value="">全部</option>
+                      </select>
+                      <i class="fa fa-angle-down"></i>
+                      </div>
+                    </div>
+                    <ul>
+                    </ul>
+                  </div>                 
+                </div>
+                <div class="step-btn toggle-disable" id="select">
+                  <button>上一步</button>
+                  <button class="disable-btn">打包应用并下一步</button>
+                </div>
+                <!-- ======创建应用模块 ========-->
+                <div class="create-app">
+                  <i class="close fa fa-close"></i>
+                  <h4>新建应用</h4>
+                  <div class="field-parent">
+                   <label for="">&nbsp;&nbsp;所属领域</label>
+                    <div class="select-one">                     
+                    <select name="" id="" class="parent-select">
+                      <option value=""></option>
+                    </select>
+                    <i class="fa fa-angle-down"></i>
+                    </div>
+                     <span style="color: #3F3F3F;padding-right: 10px; font-size: 14px;">小应用分组</span>
+                    <div class="select-two">                     
+                    <select name="" id="" class="children-select">
+                      <option value=""></option>
+                    </select>
+                    <i class="fa fa-angle-down"></i>
+                    </div>                    
+                  </div>
+                  <div class="app-name" style="position: relative;">
+                    <label for="">&nbsp;&nbsp;应用名称</label>
+                    <input type="text" placeholder="例：小贷租赁业务系统" class="test-input">
+                  </div>
+                  <div class="add-app">
+                    <h4>增加小应用 
+                  <i></i>
+                  </h4>
+                  <form action="" id="validate-url">
+                    <ul>
+                      <li class="first-li">
+                        <label for="">小应用名称</label>
+                        <input type="text" class="test-input">
+                        <label for="">接口地址</label>
+                        <input type="url" value="http://" required>
+                        <i></i>
+                      </li>
+                    </ul>
+                  </form>
+                  </div>
+                  <div class="btn">
+                    <p>接口地址规则:</p>                    
+                    <p>必须是http或者https开头，url必须是域名，不能是IP地址。</p>
+                    <button>确定</button>
+                    <button class="disable-btn">取消</button>
+                  </div>
+                </div>
+

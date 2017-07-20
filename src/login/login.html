@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta name="keywords" content="链融云市场"/>
+  <meta name="description" content="链融云市场表述" />
+  <title>login</title>
+  <link rel="shortcut icon" href="../assets/images/favicon.ico">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <script src="../assets/js/jquery/jquery.js"></script>
+  <script src="../assets/js/getAjax.js"></script>
+  <link rel="stylesheet" href="../assets/css/login.css">
+</head>
+<body>
+  <div class="typePage">
+    <div class="logHead">
+       <h1>链融云</h1>
+       <i></i>
+       <span class="enroll">登录</span>
+       <p>一个账号通行所有链融云平台服务!</p>
+       <div class="log">
+         <span class="loginIn">登录</span>
+         <span class="register">注册有礼</span>
+       </div>
+    </div>
+    <div class="content">
+      <div class="contentTop">
+        <img src="../assets/images/register/group.png" alt="">
+      </div>
+      <div class="contentBottom"></div>
+      <div class="textBox">
+        <form action="#" method="post" id="forms">
+            <p>
+              <label for="phone">手机</label>
+              <input type="text" name=""  id="phone" autocomplete="off" placeholder="请输入11位手机号">
+              <span class="showPhone errMessage">手机号不能为空！</span>
+            </p>
+            <p>
+              <label for="Password">密码</label>
+              <input type="password" name="" id="Password" autocomplete="off" placeholder="密码6-21字母和数字组成">
+              <span class="showPassOne errMessage">密码不能为空！</span>
+              <i class="forgetPassword">忘记密码？</i>
+            </p>
+            <p>
+              <label for="code">验证码</label>
+              <input type="text" name="" id="code" autocomplete="off" placeholder="请输入6位验证码">
+              <span class="showCode errMessage">验证码不能为空！</span>
+              <div class="imgCode"><img src="../assets/images/login/code.jpg" alt="" /></div>
+              <i>看不清换一张</i>
+            </p>
+        </form>
+        <div class="agreeSign">
+          <button class="signUp" disabled="true">登录</button>
+        </div>
+        <div class="points">
+          <p>没有账号？</p>
+          <span>注册有礼</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="../assets/js/login.js"></script>
+</body>
+</html>

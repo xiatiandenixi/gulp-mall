@@ -1,0 +1,72 @@
+.error-pages {
+    text-align: center;
+    padding-top: 100px;
+}
+.error-pages .icon {
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+body {
+    color: #58666e;
+    margin: 0;
+    line-height: 1.7em;
+    font-size: 13px;
+    font-family: Microsoft Yahei;
+    outline: 0;
+    text-Shadow: 0 0 1px rgba(0, 0, 0, 0.2);
+}
+.error-pages h1 {
+    color: #37363e;
+    font-family: Microsoft Yahei;
+    font-size: 28px;
+}
+.error-pages .bottom-links {
+    margin-top: 30px;
+}
+.error-pages .bottom-links a {
+    margin: 0px 6px;
+}
+
+.btn-default {
+    background-color: #399bff;
+    color: #fff;
+}
+.btn {
+    font-size: 14px;
+    padding: 7px 20px 7px 20px;
+    border: none;
+    background: #e4e4e4;
+    color: inherit;
+    border-radius: 3px;
+}
+.btn-light {
+    background-color: #fff;
+    color: inherit;
+    border: 1px solid #BDC4C9;
+}
+.error-pages .bottom-links {
+    margin-top: 30px;
+}
+.error-pages form .form-control {
+    padding-left: 34px;
+    height: 40px;
+}
+
+.error-pages form {
+    width: 400px;
+    margin: 0px auto;
+    margin-top: 30px;
+    position: relative;
+}
+
+.form-control {
+    height: 34px;
+    border-radius: 3px;
+    padding-left: 10px;
+    font-size: 14px;
+    background: #fff;
+    border: 1px solid #BDC4C9;
+    display: block;
+    -webkit-box-shadow: inset 0px 1px 0px #F1F0F1;
+            box-shadow: inset 0px 1px 0px #F1F0F1;
+}    

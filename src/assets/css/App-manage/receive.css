@@ -1,0 +1,99 @@
+.receive li.active  {
+  background: #1BA8ED;  
+}
+.grounding .info-p {
+    position: absolute;
+    left: 70px;
+    bottom: -25px;    
+    font-size: 10px;
+    color: red;
+}
+.receive p {
+  margin-top: 5px;  
+  height: 22px;  
+}
+.receive em {
+  font-style: normal;
+}
+.receive li {
+  margin-left: 20px;
+  margin-top: 20px;
+  display: inline-block;
+  width: 250px;
+  height: 120px;
+  background: #999;
+  color: #fff;
+  line-height: 120px;
+  text-align: center;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.receive span{
+  margin-left: 10px;
+  display: inline-block;
+  width: 200px;
+  height: 80px;
+  background: #999999;  
+  color: #fff;
+  line-height: 80px;
+  text-align: center;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.receive .appName{
+  margin-top: 40px;
+  margin-bottom: 25px;  
+}
+.appName , .openService {
+  display: none;
+  margin: auto;
+  width: 400px;  
+}
+.openService div {
+  position: relative;
+  display: inline-block;
+  border-radius: 5px;  
+  width: 165px;
+  height: 36px;
+  border: 1px solid #ccc;
+}
+.openService i {
+    color: #1ba8ed;
+    position: absolute;  
+    right: 10px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    width: 15px;
+    height: 16px;
+    z-index: 0;
+}
+.openService select {
+    background: transparent;
+    z-index: 1;
+    width: 100%;
+    height: 100%;    
+    position: relative;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    outline-style: none;
+    padding-left: 10px;
+    border: 0 none;     
+}
+
+.receive input { 
+  border-radius: 5px;
+  outline-style: none;
+  width: 165px;
+  height: 36px;
+}
+.receive div:first-child {
+  padding: 20px 70px 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  overflow-y: auto;
+  height: 483px; 
+  width: 968px; 
+  background-color: #fff;
+}

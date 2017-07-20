@@ -1,0 +1,21 @@
+ <ul class="clearfix">
+        <% for (var i = 0;i < data1.length; i++){ %>
+    <li class="clearfix">
+            <a href="#">           
+            <img src= <%=  data1[i].imgUrl ? fileUrl + "/download?attachId="+ data1[i].imgUrl : "../static/images/u9579.png" %> alt="">
+            </a>
+            <div class="ols">
+            <div class="star" id=<%='start'+data1[i].id %> data-score=<%=data1[i].score %>></div>
+            <a class="comment" href="#">
+            <i class="fa fa-commenting"></i>
+            <%=data1[i].evalCount %>
+            </a>
+            </div>
+            <div class="favorite">
+                <p class="wrapper"><%= data1[i].remark %>SaaS版融资租赁系统主要是为中小型融资租赁企业客户提供的以业务运营服务为核心，同时为业务提供业务获客、业务融资、业务资产转换等其他服务的业务全生态服务功能。系统功能通过基础设置、客户管理、租前管理（报价测算、项目管理、尽职调查、合同管理）、租后管理（收付管理、投放回款管理、逾期管理、变更管理、票据管理、资产管理、风险管理）等， 全面管理融资租赁核心业务；通过报表功能满足融资租赁业务报表查询、报表分析，从而能提供综合分析报表、监管报表等综合性披露报表。
+ 产品短期目标是建立融资租赁业务的业务运营服务系统——融资租赁核心业务系统，从中小型企业的核心业务模式(直接融资租赁、售后回租、经营租赁)、核心业务流程出发，满足其核心业务系统的正常运营与管理，保证最核心的业务能运营起来、管理起来，并能出具相关的业务台账、业务报表，协助融资租赁公司提高信息化和自动化水平：通过业务信息化，实现融资租赁业务的信息获取、信息传递、信息处理、业务对接等环节的商业信息自动化；通过流程标准化，对融资租赁业务的各个流程进行分类归纳和模块化处理，实现业务流程标准化、规范化。</p>                  
+            <a href=<%="../page/detail.html?id="+ encodeURIComponent(data1[i].id)%>>了解详情<i class="fa fa-angle-right"></i></a>
+            </div>
+            </li>
+            <% } %>
+    </ul>

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+     <link rel="shortcut icon" href="../assets/images/favicon.ico">
+    <link rel="stylesheet" href="../assets/css/base.css">
+    <link rel="stylesheet" href="../assets/js/jquery-toaster/toastr.css">
+    <link rel="stylesheet" href="../assets/css/customerItem.css">
+    <title>链融云平台</title>
+</head>
+<body>
+  <div class="layout">
+          <header>
+              <div class="logo">
+                  <a href="../index.html">链融云</a>
+              </div>
+              <div class="nav">
+                  <ul>
+                      <li><a href="../index.html">首页</a></li>
+                      <li><a href="../cloud/cloud.html#all">云市场</a></li>
+                      <li><a href="../customer.html">客户</a></li>
+                      <li><a href="../supplier.html">伙伴</a></li>
+                      <li class="active"><a href="../customerCase.html">客户案例</a></li>
+                  </ul>
+                  <div class="search">
+                      <input type="search" placeholder="搜索">
+                      <i></i>
+                  </div>
+                  <div class="login">
+                      <a href="javascript:void(0)">登录</a>
+                      <a href="login/register.html">注册</a>
+                  </div>
+                  <div class="personalInfor">
+                      <h4 class="showUser"><img src="../assets/images/index/user.png"
+                                                style="border-radius:50%;width:48px;height:48px;vertical-align: middle;margin-right:5px;"><span></span><i
+                              class="fa fa-angle-up"></i></h4>
+                      <div class="account">
+                          <p class="on"><a href="javascript:void(0)" class="customerItemSet">账号设置</a></p>
+                          <p><a href="" class="customerItemOut">退出账号</a></p>
+                      </div>
+                  </div>
+              </div>
+          </header>
+
+           <!-- banner -->
+          <div class="customerCaseBanner">
+            <img src="../assets/images/customerCase/cusbanger.png" alt="">
+          </div>
+          
+
+          <div class="Navigate" style="position: relative;">
+            <p>
+              <a href="../customerCase.html">客户</a>><span>烽火台保险</span>
+            </p>
+          </div>
+
+          <div class="customerItem">
+            <div>
+              <h4>客户介绍</h4>
+              <p>烽火台保险经纪有限公司地处合肥市庐阳区长江中路369号CBD中央广场1幢901室，目前主要在全国区域内（港、澳、台除外）为投保人拟订投保方案、选择保险人、办理投保手续；协助被保险人或受益人进行索赔；再保险经纪业务；为委托人提供防灾、防损或风险评估、风险管理咨询服务；中国保监会批准的其他业务。</p>
+            </div>
+             <div>
+              <h4>签约内容</h4>
+              <p>链融云保险经纪业务系统、链融云在线财务系统</p>
+            </div>
+            <div>
+              <h4>部署方式</h4>
+              <p>公有云</p>
+            </div>
+          </div>
+        <footer>
+          <div class="clearfix">
+                <dl>
+                  <dt><a href="javascript:void(0)">产品咨询</a></dt>
+                  <dd><a href="javascript:void(0)">新闻中心</a></dd>
+                  <dd><a href="javascript:void(0)">法律条款</a></dd>
+                </dl>
+                <dl>
+                  <dt><a href="javascript:void(0)">解决方案</a></dt>
+                  <dd><a href="javascript:void(0)">客服服务</a></dd>
+                </dl>
+                <dl>
+                  <dt><a href="javascript:void(0)">关于我们</a></dt>
+                  <dd><a href="javascript:void(0)">意见反馈</a></dd>
+                  <dd><a href="javascript:void(0)">联系我们</a></dd>
+                </dl>
+              <dl style="text-align: center; margin-left: 30px;">
+                  <dt>扫一扫，关注我们</dt>
+                  <dd>
+                      <img src="../assets/images/index/qr.jpg" width="122" height="122" alt="">
+                  </dd>
+              </dl>
+              <dl>
+                  <dt><img src="../assets/images/index/tel.png" alt="">
+                  <h4>服务热线（工作时间：8:30-17:00）<p>010-62432033</p></h4>
+                  </dt>
+                  <dd>
+                      地址：北京市海淀区北清路68号用友软件园
+                      <p>邮箱：imfbp@youyou.com</p>
+                  </dd>
+              </dl>
+          </div>
+          <p>Copyright.@2013-2016imfbp.com.All Rights Reserved.用友金融 版权 </p>
+          <p><img style="vertical-align: middle;" src="../assets/images/index/bitmap.png" alt="">京ICP13042244号</p>
+       </footer>
+  </div>
+  <script src="../assets/js/jquery/jquery.js"></script>
+  <script src="../assets/js/jquery.cookie.js"></script>
+  <script src="../assets/js/tool.js"></script>
+  <script src="../assets/js/common.js"></script>
+  <script>
+     $(".customerItemOut").attr("href",logout);
+     $(".customerItemSet").attr("href","../login/manageAccount.html#basics");
+  </script>
+</body>
+</html>

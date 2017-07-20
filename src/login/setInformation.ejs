@@ -1,0 +1,133 @@
+<p class="reminder">提醒：请完善以下信息，方便我们更好的为您提供服务，用友金融互联网平台不会将这些信息对外披露或向第三方提供。</p>
+ <form  id="commentForm" method="post">
+   <div class="basicContent" style="position: relative;">
+      <div id="disableInfo" style="color: #DD3730;text-align: center;display: none;font-size: 16px">信息认证审核中，不能修改</div>
+      <div class="basicInfo" style="position: relative;">
+        <h3>基本信息</h3>
+        <p>
+          <label for="basicName" class="labels">联系人姓名<i>*</i></label>
+          <input type="text" name="userRealName" id="basicName" autocomplete="off" placeholder="" minlength="2" maxlength="30" required>
+        </p>
+        <p>
+          <label for="basicPhone" class="labels">手机号<i style="opacity: 0">*</i></label>
+          <input type="text" name="userPhone" id="basicPhone" autocomplete="off" placeholder="" required disabled="true">
+        </p>
+        <p>
+          <label for="basicMail" class="labels">联系人邮箱<i>*</i></label>
+          <input type="email" name="userEmail" id="basicMail" autocomplete="off" placeholder="" required maxlength="30">
+        </p>
+        <div class="contact" style="display: none;">
+          <div id="contactImg">联系人头像</div>
+          <div id="contacFile">
+            <div class="contacImgFile">
+              <img src="" onerror="javascript:this.src='../../static/images/error/basicImg.png';" alt="">
+            </div>
+            <span>上传头像</span>
+          </div> 
+        </div>
+      </div>
+      <div class="enterpriseInfo" style="position: relative;">
+          <h3>企业信息</h3>
+          <p>
+            <label for="companyName" class="labels">企业名称<i>*</i></label>
+            <input type="text" name="userCompany" id="companyName" autocomplete="off" placeholder="" required maxlength="90">
+          </p>
+          <p class="office">
+            <label for="officeAddress" class="labels">办公地址<i>*</i></label>
+            <select name="userAreaProvince" id="province" required>
+               <option value="">省</option>
+            </select>
+            <select name="userAreaCity" id="city" required>
+               <option value="">市区</option>
+            </select>
+            <p><input type="text" name="userDetailAddress" id="officeAddress" autocomplete="off" placeholder="" required maxlength="190"></p>
+          </p>
+           <p>
+            <label for="industry" class="labels">所属行业<i>*</i></label>
+            <select name="industry" id="industry" required>
+                <option value="" >请选择</option>
+                <option value="网站">网站</option>
+                <option value="移动APP">移动APP</option>
+                <option value="IT与软件开发">IT与软件开发</option>
+                <option value="新闻媒体">新闻媒体</option>
+                <option value="通讯社交">通讯社交</option>
+                <option value="电子商务">电子商务</option>
+                <option value="游戏">游戏</option>
+                <option value="音视频">音视频</option>
+                <option value="金融">金融</option>
+                <option value="教育">教育</option>
+                <option value="医疗健康">医疗健康</option>
+                <option value="旅游">旅游</option>
+                <option value="物联网">物联网</option>
+                <option value="汽车业/车联网">汽车业/车联网</option>
+                <option value="O2O">O2O</option>
+                <option value="电力/新能源">电力/新能源</option>
+                <option value="交通运输">交通运输</option>
+                <option value="生产制造">生产制造</option>
+                <option value="建筑/地铁">建筑/地铁</option>
+                <option value="政府/事业单位">政府/事业单位</option>
+                <option value="新零售业/烟草业">新零售业/烟草业</option>
+                <option value="基因">基因</option>
+                <option value="物流邮政">物流邮政</option>
+                <option value="运营商">运营商</option>
+                <option value="能源重工">能源重工</option>
+                <option value="公共事业/城市服务">公共事业/城市服务</option>
+                <option value="教育">教育</option>
+            </select>
+          </p>
+          <p>
+            <label for="corporate" class="labels">法人代表<i>*</i></label>
+            <input type="text" name="corporation" id="corporate" autocomplete="off" placeholder="" required maxlength="18">
+          </p>
+          <p>
+            <label for="corporatePhone" class="labels">法人电话<i>*</i></label>
+            <input type="text" name="corporationPhone" id="corporatePhone" autocomplete="off" placeholder="" required  corporationPhone >
+          </p>
+          <p>
+            <label for="registrationDate" class="labels">注册日期<i style="opacity: 0">*</i></label>
+            <input type="text" class="datainp wicon"  name="creationtime" id="registrationDate" autocomplete="off" placeholder="" >
+          </p>
+          <p class="companyWebsite">
+            <label for="companyWebsite" class="labels">公司网址<i style="opacity: 0">*</i></label>
+            <input type="url" name="companyUrl" id="companyWebsite" autocomplete="off" maxlength="90">
+          </p>
+          <p class="registeredAssets">
+            <label for="registeredAssets" class="labels">注册资本<i style="opacity: 0">*</i></label>
+            <input type="text" name="registeredCapital" id="registeredAssets" autocomplete="off" placeholder="" maxlength="40">
+          </p>
+          <p class="licenseNumber">
+            <label for="licenseNumber" class="labels">营业执照号<i style="opacity: 0">*</i></label>
+            <input type="text" name="businessLicenseNo" id="licenseNumber" autocomplete="off" placeholder="" maxlength="60">
+          </p>
+          <div class="uploadImg">
+            <i class="fa fa-minus-square"></i>
+            <div id="fileName">营业执照<br>影印文件</div>
+            <div id="videoFile">
+              <div class="imgFile">
+                <img src="" alt="">
+              </div>
+              <input type="file" id="upload" style="display: none;">
+              <span>上传文件</span>
+            </div> 
+          </div>
+        </div>
+
+         <div class="authenticationInfo">
+              <h3>认证信息</h3>
+              <p>
+                <label for="identificationCode" class="labels">纳税人识别码:<i style="opacity: 0">*</i></label>
+                <input type="text" name="taxpayerNo" id="identificationCode" autocomplete="off" placeholder="" maxlength="60">
+              </p>
+              <p>
+                <label for="bankName" class="labels">开户行:<i style="opacity: 0">*</i></label>
+                <input type="text" name="bankAccount" id="bankName" autocomplete="off" placeholder="" maxlength="90">
+              </p>
+              <p>
+                <label for="accountNumber" class="labels">开户账号:<i style="opacity: 0">*</i></label>
+                <input type="text" name="bankAccountNo" id="accountNumber" autocomplete="off" placeholder="" maxlength="60">
+              </p>
+            </div>
+        <div style="height: 50px;"></div>
+        <input id="saveBtn" type="button" value="保存">
+    </div>
+  </form>

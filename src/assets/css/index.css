@@ -1,0 +1,495 @@
+.layout .banner {
+  width: 100%;
+  background-color: #00c9db;
+  height: 400px;
+  margin: 0 auto;
+  position: relative; 
+}
+
+.layout .banner .swiper-container {
+  width: 100%;
+  height: 400px;
+}
+
+.layout .banner .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  line-height: 300px;
+}
+
+.layout .banner .swiper-pagination {
+  z-index: 10;
+  position: absolute;
+  left: 0;
+  text-align: center;
+  bottom: 40px;
+  width: 100%;
+}
+
+.layout .banner .swiper-pagination-switch {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0);
+  border: 1px solid #fff;
+  margin: 0 3px;
+  cursor: pointer;
+}
+
+.layout .banner .swiper-active-switch {
+  background: #fff;
+}
+.layout .kind .swiper-container {
+  margin: 0 auto;
+  position: relative;
+  left: 0;
+  right: 0;
+  overflow: hidden;
+  direction: ltr;
+  z-index: 1;
+  width: 1180px;
+  height: 205px;
+  -webkit-box-shadow: 0px 0px 8px 0px rgba(102,102,102,0.40);
+          box-shadow: 0px 0px 8px 0px rgba(102,102,102,0.40);
+  margin-top: 45px;
+}
+
+.layout .kind .swiper-wrapper {
+  position: relative;
+  left: 0;
+  top: 0;
+  width: 100%;
+  -webkit-transition-property: left, top, -webkit-transform;
+  transition-property: left, top, -webkit-transform;
+  transition-property: transform, left, top;
+  transition-property: transform, left, top, -webkit-transform;
+  -webkit-transition-duration: 0s;
+          transition-duration: 0s;
+  -webkit-transform: translate3d(0px, 0px, 0px);
+          transform: translate3d(0px, 0px, 0px);
+  -webkit-transition-timing-function: ease;
+          transition-timing-function: ease;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.layout .kind { 
+  width: 1365px;
+  margin: 0 auto;
+}
+.layout .kind.advantage {
+  height: 435px!important;
+}
+
+.layout .kind .preview {
+  width: 1200px;
+  margin: 0 auto;
+  position: relative;
+}
+.kind .preview .swiper-slide {
+  float: left;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 238px;
+  font-size: 26px;
+  height: 205px;
+  text-align: center;
+  line-height: 205px;
+  background-color: #ffffff;
+  -webkit-box-shadow: 0px 0px 8px 0px rgba(102,102,102,0.40);
+          box-shadow: 0px 0px 8px 0px rgba(102,102,102,0.40);
+}
+
+.kind .preview .slide6 {
+  width: 15%;
+}
+.kind .preview .arrow-left {
+  display: inline-block;
+  background: transparent url('../images/index/index_tab_l.png') no-repeat scroll left top;
+  position: absolute;
+  left: -35px;
+  top: 50%;
+  margin-top: -25px;
+  width: 28px;
+  height: 51px;
+  z-index: 10;
+}
+
+.kind .preview .arrow-right {
+  display: inline-block;
+  background: transparent url('../images/index/index_tab_r.png') no-repeat scroll left bottom;
+  position: absolute;
+  right: -35px;
+  top: 50%;
+  margin-top: -25px;
+  width: 28px;
+  height: 51px;
+  z-index: 10;
+}
+
+.kind .preview .swiper-slide a {
+  padding: 1px;
+  display: inline-block;
+}
+.layout .kind .swiper-slide a {
+  width: 100%;
+  font-size: 26px;
+  font-weight: 400;
+  display: inline-block;
+  position: relative;
+}
+.layout .kind .swiper-slide:hover a{ 
+  color: #666;
+  background-color: #eaeaea;
+}
+
+.layout .kind .swiper-slide a i {
+  font-size: 26px;
+}
+
+.layout .kind .swiper-slide a p {
+  font-size: 26px;
+  width: 100%;
+  height: 36px;
+  position: absolute;
+  top: 40px;
+  left: 0;
+}
+.layout .kind .swiper-slide:nth-child(6) {
+  background-color: #eaeaea;
+}
+
+.layout .kind li:first-child,
+.kind li:last-child {
+  width: 10%;
+  background-color: #eaeaea;
+}
+
+.swiper-wrapper>.swiper-slide>img{
+  width: 100%;
+}
+    
+.common {
+    border-bottom: 1px solid #F6F6F6;
+}
+.common h4{
+   font-size: 30px;
+   color: #333333;
+   text-align: center;
+   margin-top: 40px;
+}
+.common p{
+  margin-top: 13px;
+  font-size: 14px;
+  color: #999999;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.common .trustinessImg{
+    width: 1100px;
+    margin: 0 auto;
+}
+.common .trustinessImg img{
+    width: 100%;
+}
+.cloudServices ul{
+    width: 1010px;
+    padding:5px;
+    margin:86px auto;
+    margin-bottom: 0px;
+    overflow:hidden;
+}
+.cloudServices ul li{
+    width: 248px;
+    height: 323px;
+    padding-top: 50px;
+    float: left;
+}
+.cloudServices ul li.on{
+ cursor:pointer;
+}
+.cloudServices ul li:hover{
+    padding-top: 30px;
+    background: #FFFFFF;
+    -webkit-box-shadow: 0 5px 13px 0;
+            box-shadow: 0 5px 13px 0;
+    color: rgba(227,227,227,0.50);
+}
+.cloudServices ul li:hover div{
+    display: block;
+}
+.cloudServices ul li span{
+    display: block;
+    width: 113px;
+    margin: 0 auto;
+}
+.cloudServices ul li span img{
+    width: 113px;
+}
+.cloudServices ul li h5{
+    text-align:center;
+    width: 180px;
+    margin: 0 auto;
+    font-size: 15px;
+    color: #333333;
+    line-height: 15px;
+    margin-bottom: 10px;
+}
+.cloudServices .cloudServiceslist{
+    width: 182px;
+    display: block;
+    margin: 0 auto;
+    font-size: 13px;
+    color: #999999;
+    text-align:center;
+}
+.cloudServices ul li b{
+    display: block;
+    width: 37px;
+    margin:10px auto;
+    border:1.5px solid #E2E2E2;
+}
+ .cloudServices ul li div{
+    position: relative;
+    left: 0px;
+    top: 17px;
+    width: 157px;
+    margin: 30px auto;
+    display: none;
+ }
+.cloudServices button{
+    width: 70px;
+    height: 26px;
+    color: #999999;
+    border: 1px solid #999999;
+    border-radius: 3px;
+    background: #fff;
+    font-size: 12px;
+    margin-right: 17px;
+    cursor: pointer;
+}
+.cloudServices button.on{
+    background: #DD3730;
+    color: #fff;
+    margin-right: 0px;
+    border-color: transparent;
+}
+
+.solution{
+    height: 622px;
+    margin:0 auto;
+    background: #F6F6F6;
+}
+.solution .solutionTop{
+    padding-top: 10px;
+    height: 162px;
+}
+.solution .tab-list{
+    width: 1280px;
+    padding: 50px 125px;
+    margin: 0 auto;
+    overflow:hidden;
+    background: #fff;
+}
+.solution .tab{
+    width: 117px;
+    height: 336px;
+    border-right: 1px solid  #F6F6F6;
+    font-size: 15px;
+    color: #666666;
+    float: left;
+}
+.solution .tab li{
+    position: relative;
+    cursor: pointer;
+    margin-bottom: 41px;
+}
+.solution .tab i{
+    position: absolute;
+    right: 30px;
+    top: -5px;
+    color: #EAEAEA;
+    font-size: 30px;
+    width: 7px;
+    height: 14px;
+}
+.solutionContents {
+    width: 900px;
+    float: left;
+}
+.solution .solutionContents .main {
+    font-style: normal;
+    float: left; 
+    width: 100%;
+    display: none;
+    margin-top: 70px;
+    margin-left: 50px;
+    position: relative;
+    width: 900px;
+}
+.solution .solutionContents .main h5{
+    font-size: 20px;
+    color: #333333;
+    margin-bottom: 31px;
+    width: 440px;
+}
+.solution .solutionContents .main div{
+    font-size: 13px;
+    color: #666666;
+    width: 440px;
+}
+.solution .solutionContents .main span{
+    display: block;
+    position: absolute;
+    right: 50px;
+    top: -70px;
+}
+
+.solution .solutionContents .financeLease span{
+    display: block;
+    position: absolute;
+    right: 30px;
+    top: -30px;
+}
+.solution .solutionContents .main img{
+    width: 350px;
+    height: 336px;
+}
+.solution .solutionContents .financeLease img{
+    width: 407px;
+    height: 225px;
+}
+.solution .solutionContents .main.selected {
+  display: block;
+}
+
+.solution .tab li.active {
+  color: #DD3730;
+}
+
+.solution .tab li.active i{
+  color: #DD3730;
+}
+
+
+
+ .abilityPlatform ul{
+    overflow:hidden;
+    width: 1038px;
+    margin:0px auto;
+    padding: 40px 0px;
+ }
+ .abilityPlatform li{
+    position: relative;
+    width: 336px;
+    height: 147px;
+    margin-right: 15px;
+    margin-bottom: 15px;
+    padding:20px;
+    float: left;
+ }
+ .abilityPlatform li.on{
+    margin: 0px;
+ }
+
+ .abilityPlatform .abilityPlatformItem{
+    width: 200px;
+    position: absolute;
+    left: 110px;
+    top: 30px;
+ }
+ .abilityPlatform .abilityPlatformItem h5{
+    font-size: 18px;
+    color: #333333;
+    margin-bottom: 10px;
+ }
+ .abilityPlatform .abilityPlatformItem span{
+    display: block;
+    font-size: 13px;
+    color: #999999;
+ }
+ .abilityPlatform .abilityPlatformItem.on h5{
+    color: #fff;
+ }
+
+  .abilityPlatform .abilityPlatformItem.on span{
+   color: #fff;
+ }
+
+
+.strategicPartner{
+ padding-bottom: 50px;
+}
+
+.layout footer {
+    width: 100%;
+    min-width: 1200px;
+    background: rgb(247, 247, 247) none repeat scroll 0% 0%;
+    height: 291px;
+    padding-top: 28px;
+}
+.layout footer>div{
+    min-width: 960px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.layout footer dl {
+    width: 10%;
+    float: left;   
+    margin-bottom: 10px;
+}
+.layout footer dl:nth-child(n+4){
+  width: 30%;
+}
+.layout footer dd{
+  margin-top: 20px !important;
+  line-height: 18px;
+}
+.layout footer dl:last-child{
+  float: right; 
+  
+}
+.layout footer dl:last-child img{
+  float: left;
+  vertical-align: middle;
+  margin-right: 13px;
+}
+.layout footer dl:last-child dt h4{
+  font-family: "Microsoft YaHei";
+    font-size: 14px;
+    color: #666666 !important;
+}
+.layout footer dl:last-child dt p{
+   font-family: "Microsoft YaHei";
+    font-size: 29px;
+    color: rgb(102, 102, 102);
+    font-weight: bold;
+    text-align: left;
+}
+.layout footer dl:last-child dd{
+    width: 300px;
+    height: 55px;   
+    margin-top: 28px;
+   font-family: "Microsoft YaHei";
+    font-size: 12px;
+    color: #666666;
+}
+.layout footer dl:last-child dd p{
+    text-align: left;
+     color: #666666;
+     margin-bottom: 0;
+
+}
+.layout  footer dd {
+    margin: 0;
+}
+
+.layout footer p {
+    text-align: center;
+   font-family: "Microsoft YaHei";
+    font-size: 12px;
+    color: #999999;
+    margin-bottm: 10px;
+}

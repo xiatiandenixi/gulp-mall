@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta name="keywords" content="链融云市场"/>
+  <meta name="description" content="链融云市场表述" />
+  <title>链融云平台</title>
+  <link rel="shortcut icon" href="../assets/images/favicon.ico">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/detail.css">
+  <link rel="stylesheet" href="../assets/js/font/css/font-awesome.css">
+  <link rel="stylesheet" href="../assets/js/jQueryPage/page.css">
+  <link rel="stylesheet" href="../assets/js/slider/slider.css">
+</head>
+<body>
+<div class="layout">
+<div class="header">
+  <header>
+  <div class="logo">
+    <a href="javascript:void(0)">链融云</a>
+  </div>
+  <div class="nav">
+    <ul>
+      <li><a href="../index.html">首页</a></li>
+      <li class="active"><a href="cloud.html#all">云市场</a></li>
+      <li><a href="../customer.html">客户</a></li>
+      <li><a href="../supplier.html">伙伴</a></li>
+      <li><a href="../customerCase.html">客户案例</a></li>
+    </ul>
+    <div class="search">
+      <input type="search" placeholder="搜索">
+      <i></i> 
+    </div>
+    <div class="login">
+      <a href="javascript:void(0)">登录</a>
+      <a href="../login/register.html">注册</a>
+    </div>
+      <div class="personalInfor">
+     <h4 class="showUser"> <img src="../assets/images/index/user.png" style="border-radius:50%;width:48px;height:48px;vertical-align: middle;margin-right:5px;"><span></span><i class="fa fa-angle-up"></i></h4>
+     <div class="account">
+       <p class="on"><a href="javascript:void(0)">账号设置</a></p>
+       <p><a href="" class="withDraw">退出账号</a></p>
+     </div>   
+   </div>
+  </div>
+</header>
+</div>
+
+  <div id="product"></div>
+ <footer>
+      <div class="clearfix">
+      <dl>
+        <dt><a href="javascript:void(0)">产品咨询</a></dt>
+        <dd><a href="javascript:void(0)">新闻中心</a></dd>
+        <dd><a href="javascript:void(0)">法律条款</a></dd>
+      </dl>
+      <dl>
+        <dt><a href="javascript:void(0)">解决方案</a></dt>
+        <dd><a href="javascript:void(0)">客服服务</a></dd>
+      </dl>
+      <dl>
+        <dt><a href="javascript:void(0)">关于我们</a></dt>
+        <dd><a href="javascript:void(0)">意见反馈</a></dd>
+        <dd><a href="javascript:void(0)">联系我们</a></dd>
+      </dl>
+      <dl style="text-align: center; margin-left: 30px;">
+        <dt>扫一扫，关注我们</dt>
+        <dd>
+          <img src="../assets/images/index/qr.jpg" width="122" height="122" alt="">
+        </dd>
+      </dl>
+      <dl>
+        <dt><img src="../assets/images/index/tel.png" alt=""><h4>服务热线（工作时间：8:30-17:00）<p>010-62432033</p></h4></dt>
+        <dd>
+          地址：北京市海淀区北清路68号用友软件园
+          <p>邮箱：imfbp@youyou.com</p>
+     </dd>
+      </dl>
+      </div>      
+      <p>Copyright.@2013-2016imfbp.com.All Rights Reserved.用友金融 版权 </p>
+      <p><img style="vertical-align: middle;" src="../assets/images/index/bitmap.png" alt="">京ICP13042244号</p>
+</footer>
+<div class="mhc"></div> 
+</div>
+<!--详情页ejs模板 -->
+<script type="text/template" id="tem">
+  <div class="topImg">
+    <img src=<%=imgUrl["1"] %><%=data.data.bannerImg %> onerror="javascript:this.src='../static/images/detail/xq.png';"/>
+
+  </div>
+  <div class="typePage">
+    <div class="mainSer">
+      <div class="service">
+        <h3><%=data.data.merchandiseName%></h3>
+        <span>用户评分：<i id="star1" data-score=<%=data.data.score %></i></span>
+      </div>
+      <div class="money">
+      </div>
+      <div style="clear:both"></div>
+    </div>
+    <div style="overflow: hidden;margin-top: 20px;">
+    <ul class="tab">
+        <li class="tab-item active">概述</li>
+        <li class="tab-item">细节</li>
+        <li class="tab-item" id="discuss">评论</li>
+        <li class="tab-item" id="provide">提供商</li>
+    </ul>
+    <span class="hint"><%=data.data.evalCount%></span>
+      <div class="products">
+          <div class="main selected remarkInfo" style="position: relative; min-height:600px">
+          <div class="summary remark" style="margin-top: 5px;"><%=data.data.remark %></div>
+          <div class="summarys">
+            <div id="testId_01" style="display: none;">
+              用友金融完整的业、财一体化解决方案，能够全面支持融资租赁公司开展租赁业务和公司管理的需求，包括：客户管理、项目管理、评估授信、租金测算、合同管理、文档管理、资金管理、资产管理、合同履约等整个合同生命周期资产组合的管理，助力租赁行业融通天下。<br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp金融租赁<br>
+              用友金融完整的业财一体化解决方案，能够全面支持租赁公司开展租赁业务、建设管理规范、提升业务效率等需求。方案支持整个租赁业务生命周期的关键环节的信息化管理，同时通过整合金融租赁行业相关管理规范、监管制度、要求标准等内容，进一步提升专业化咨询服务能力。用友金融全面助力金融租赁公司融通天下。<img src="../assets/images/demo/pic38.jpg" alt="" style="width: 733px"><br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp融资租赁<br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp用友金融基于多年的行业分析和实施经验，建设了丰富的、有针对性的系统产品体系，为不同类型、不同规模、不同领域范围的融资租赁公司量身打造匹配的信息化建设方案。助力融资租赁公司全面提升业务效率、规范开展公司管理制度、增强数据分析能力，实现融资租赁公司更快更好的发展。
+            </div>
+          </div>
+              <div class="ban" id="demo1">
+                  <div class="ban2" id="ban_pic1">
+                    <div class="prev1" id="prev1"><img src="../assets/js/slider/images/index_tab_l.png" width="28" height="51" alt=""/></div>
+                    <div class="next1" id="next1"><img src="../assets/js/slider/images/index_tab_r.png" width="28" height="51" alt=""/></div>
+                    <ul>
+
+                      
+
+                       <% for (var i = 0;i < imgArrs.length; i++){ %>
+                          <li><a href="javascript:;"><img src=<%=imgUrl["1"] %><%=imgArrs[i]%> width="400" height="340" onerror="javascript:this.src='../static/images/detail/swiper1.jpg';" alt=""/></a></li>
+                       <% } %>  
+                    </ul>
+                  </div>
+                  <div class="min_pic">
+                    <div class="prev_btn1" id="prev_btn1"><img src="../assets/js/slider/images/feel3.png" width="9" height="18" alt=""/></div>
+                    <div class="num clearfix" id="ban_num1">
+                      <ul>
+
+                       <% for (var i = 0;i < imgArrs.length; i++){ %>
+                          <li><a href="javascript:;"><img src=<%=imgUrl["1"] %><%=imgArrs[i]%> width="56" height="56" alt=""/ onerror="javascript:this.src='../static/images/detail/swiper1.jpg';"></a></li>
+                       <% } %>  
+                        
+                
+                      </ul>
+                    </div>
+                    <div class="next_btn1" id="next_btn1"><img src="../assets/js/slider/images/feel4.png" width="9" height="18" alt=""/></div>
+                  </div>
+                </div>
+              <div class="pop_up" id="demo2">
+                <div class="pop_up_xx"><img src="../assets/js/slider/images/chacha3.png" width="40" height="40" alt=""/></div>
+                <div class="pop_up2" id="ban_pic2">
+                  <div class="prev2" id="prev2"><img src="../assets/js/slider/images/index_tab_l.png" width="28" height="51" alt=""/></div>
+                  <div class="next2" id="next2"><img src="../assets/js/slider/images/index_tab_r.png" width="28" height="51" alt=""/></div>
+                  <ul>
+                     <% for (var i = 0;i < imgArrs.length; i++){ %>
+                            <li><a href="javascript:;"><img src=<%=imgUrl["1"] %><%=imgArrs[i]%> width="840" height="480" alt=""/ onerror="javascript:this.src='../static/images/detail/swiper1.jpg';"></a></li>
+                       <% } %> 
+                  
+                 
+                  </ul>
+                </div>
+              </div>
+          </div>
+          <div class="main summaryInfo" style="min-height:600px">
+              <div id="curSummary"></div>
+              <div id="testId_02" style="display: none;">
+                <p style="width: 733px;font-size: 15px;line-height: 28px;">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp直租回租、经营性租赁、资金管理、盈利预测、税务处理、银企直联、集团资金池业务等7大核心功能，从2013年上线开始到项目顺利验收，再到系统功能迭代开发升级前后共经历了4年的建设周期。系统同时满足了交银租赁的航运租赁、航空租赁、公共事业租赁、能源设备租赁、厂商租赁等多种特色租赁业务，为客户提供直租、回租、经营租赁、融资租赁、混合租赁及境内保税区SPV项目等多种租赁模式；同时基于用友金融强大的技术平台，实现了和其他系统的完美对接，依托于银企直联能够满足公司每年多达8000笔的支付业务处理；</p>
+                <p><img src="../assets/images/demo/demo1.png" alt="" style="width: 733px"></p>
+                <p><img src="../assets/images/demo/demo2.png" alt="" style="width: 733px"></p>
+                <div class=""><p>承租人认证<br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp技术: 直连公安部信息中心;<br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspOCR识别及比对输出：1、人是真的；2、是承租人本人。</p>
+                  <p> 银行卡认证<br>技术：银行卡、姓名、身份证号、手机号四要素关联验证输出：三要素一致性或四要素一致性场景：是否打款，账户提现真实</p>
+                </div>
+                <p><img src="../assets/images/demo/demo.png" alt="" style="width: 733px"></p>
+                <p><img src="../assets/images/demo/demo33.png" alt="" style="width: 733px"></p>
+              </div> 
+          </div>
+          <div class="main discussMain" style="position:relative;min-height:600px">
+            <div class="comment">
+                <div class="spot">
+                  <h4>评论亮点</h4>
+                  <strong><%=data.data.score %></strong>
+                </div>
+                <div class="score">
+
+                  <div class="stars">
+                    <p>
+                      <em><%=data.data.score %>分</em>
+                      <span>(<%=data.data.evalCount%>条评论)</span>
+                    </p>
+                  </div>
+
+                  <div class="prosse">
+                    <span>评论分配</span>
+                    <ul>
+                      <li><em>5颗星</em><i id="container" class="containers"></i></li>
+                      <li><em>4颗星</em><i id="container1" class="containers"></i></li>
+                      <li><em>3颗星</em><i id="container2" class="containers"></i></li>
+                      <li><em>2颗星</em><i id="container3" class="containers"></i></li>
+                      <li><em>1颗星</em><i id="container4" class="containers"></i></li>
+                    </ul>
+                  </div>
+                </div>  
+              </div>
+              <div id="cri"></div>
+              <ul class="page" maxshowpageitem="2" pagelistcount="10"  id="page"></ul> 
+          </div>
+          <div class="main provider" style="min-height:570px">
+             <div>
+               <h3><%=data.data.provider.user_company %></h3>
+               <p class="providerPhone"><%=data.data.provider.user_phone %></p>
+              <div class="providerItem">
+                <span>地址</span>
+                <p><%=data.data.provider.address %></p>
+              </div>
+              <div class="providerItem">
+                <span>公司网址</span>
+                <p><%=data.data.provider.company_url %></p>
+              </div>
+              <div class="providerItem">
+                <span>注册资本</span>
+                <p><%=data.data.provider.registered_capital %></p>
+              </div>
+             </div>
+          </div>
+      </div>
+    </div>
+  </div>
+  <div class="rele">
+      <div style="margin:0 25px; height: 170px;">
+        <div class="reles">
+          <img class="reImg" src="../assets/images/detail/txt.png"></img>
+          <p><em>评论</em><span><i id="star3" data-score="3"></i></span></p>
+        </div>
+        <div class="reles">
+          <img class="reImg" src="../assets/images/detail/txt.png"></img>
+          <p><em>评论</em><span><i id="star4" data-score="3"></i></span></p>
+        </div>
+        <div class="reles">
+          <img class="reImg" src="../assets/images/detail/txt.png"></img>
+          <p><em>评论</em><span><i id="star5" data-score="3"></i></span></p>
+        </div>
+        <div class="reles">
+          <img class="reImg" src="../assets/images/detail/txt.png"></img>
+          <p><em>评论</em><span><i id="star6" data-score="3"></i></span></p>
+        </div>
+      </div>
+  </div>
+</script>
+<!--详情页ejs模板 -->
+  <script src="../assets/js/jquery/jquery.js"></script>
+  <script src="../assets/js/raty/jquery.raty.js"></script>
+  <script src="../assets/js/raty/user.raty.js"></script>
+  <script src="../assets/js/ejs/ejs.min.js"></script>
+  <script src="../assets/js/progressbar/progressbar.min.js"></script>
+  <script src="../assets/js/jQueryPage/page.js"></script>
+  <script src="../assets/js/tool.js"></script>
+  <script src="../assets/js/jquery.cookie.js"></script>
+  <script src="../assets/js/common.js"></script>
+   <script src="../assets/js/slider/pic_tab.js"></script>
+  <script src="../assets/js/detail.js"></script>
+</body>
+</html>

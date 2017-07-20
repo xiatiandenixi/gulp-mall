@@ -1,0 +1,220 @@
+html{
+    margin: 0;
+    padding: 0;
+}
+.layout section.clearfix{
+    background: #ffffff;
+}
+.banner {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    border: none;
+    background: #ffffff;
+    position: relative;
+}
+
+.banner_img {
+    /*opacity: 0.4;*/
+    /*max-width: 1200px;*/
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.banner_img img {
+    /*max-width: 1200px;*/
+    width: 100%;
+    margin: 0 auto;
+}
+
+.banner .banner_text {
+    width: 480px;
+    position: absolute;
+    color: #FFFFFF;
+    left: 50%;
+    margin-left: -550px;
+    top: 50%;
+    margin-top: -100px;
+    font-family: Microsoft Yahei;
+}
+.banner .banner_text h2{
+    font-size: 30px;
+    line-height: 40px;
+}
+.banner .banner_text p{
+    margin-top: 20px;
+    margin-bottom: 40px;
+    font-size: 20px;
+    line-height: 26px;
+}
+.banner .btn-group button {
+    width: 117px;
+    height: 36px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+.banner .btn-group button.btn_login {
+    background: #DD3730;
+    border: 1px solid #DD3730;
+}
+.banner .btn-group button.btn_reg {
+    background: transparent;
+    border: 1px solid #ffffff;
+    margin-left: 10px;
+}
+.banner .btn-group button.btn_reg a,.banner .btn-group button.btn_login a{
+    color:#FFF;
+}
+.content {
+    margin-bottom: 80px;
+}
+.content h2{
+    font-size: 30px;
+    line-height: 40px;
+    text-align: center;
+    margin: 50px;
+}
+.content .custom_info {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    -webkit-box-shadow: 1px 1px 38px rgba(0,0,0,.08);
+            box-shadow: 1px 1px 38px rgba(0,0,0,.08);
+    overflow: hidden;
+    background: #ffffff;
+}
+.content .custom_info .big_card div:first-child {
+    border-right: none;
+    /*box-shadow-left: none;*/
+}
+.content .custom_info .big_card div {
+    text-align: center;
+    padding: 50px 80px;
+    float: left;
+    width: 50%;
+    border: 1px solid rgba(0,0,0,.08);
+    -webkit-box-shadow: 1px 1px 38px rgba(0,0,0,.08);
+            box-shadow: 1px 1px 38px rgba(0,0,0,.08);
+}
+.content .custom_info.grounding .big_card div {
+    padding: 30px;
+    height: 350px;
+    width: 25%!important;
+    border-right: none;
+}
+.content .custom_info.grounding .big_card div:last-child {
+    border-right: 1px solid rgba(0,0,0,.08);
+}
+.content .custom_info.grounding .big_card div p {
+    margin: 0 auto;
+    width: 200px;
+}
+
+.content .custom_info .big_card div img{
+    width: 120px;
+    height: 120px;
+}
+.content .custom_info .big_card div h3 {
+    font-size:20px;
+    margin: 10px auto 20px auto;
+}
+.content .custom_info .big_card div p {
+    margin: 0 auto;
+    width: 400px;
+}
+.content .custom_info div ul {
+    padding: 40px 0 60px;
+    float: left;
+    border: 1px solid rgba(0,0,0,.08);
+    border-top: none;
+    -webkit-box-shadow: 1px 1px 38px rgba(0, 0, 0, .08);
+            box-shadow: 1px 1px 38px rgba(0, 0, 0, .08);
+}
+.content .custom_info div ul li {
+    text-align: center;
+    font-size: 14px;
+    padding: 10px 30px;
+    float: left;
+    width: 20%;
+    border: none;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+}
+.content .custom_info div ul li h3{
+    margin: 10px auto 20px auto;
+}
+.app-process {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    background: #dfdfdf;
+    padding: 50px 0;
+}
+.app-process h2 {
+    font-size: 30px;
+    line-height: 40px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.app-process .steps {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    height: 100%;
+    overflow: hidden;
+}
+.app-process .steps .step{
+    float: left;
+    width: 95%;
+    height: 350px;
+    background: #ffffff;
+    border: 1px solid #dddddd;
+    border-radius: 5px;
+    margin-bottom: 30px;
+
+}
+.app-process .steps .step h3{
+    position: relative;
+    font-size: 22px;
+}
+.app-process .steps .step h3 .circle{
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    line-height: 30px;
+    border: 3px solid #bbbbbb;
+    border-radius: 50%;
+    font-weight:700;
+    color: #bbbbbb;
+    position: absolute;
+    left:0;
+}
+.app-process .steps .step .content{
+    width: 50%;
+    position: relative;
+    margin: 0 auto;
+    padding-top:55px ;
+    background-color: #ffffff;
+    text-align: center;
+}
+.app-process .steps .step .content p{
+    margin: 30px;
+    text-align: center;
+}
+.app-process .steps .step .content img{
+    width: 40%;
+    position: relative;
+    margin: 0 auto;
+
+}
+.left{
+    width: 50%;
+    float: left;
+}
+.right{
+    width: 50%;
+    float: right;
+}

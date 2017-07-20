@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <title>链融云平台</title>
+  <link rel="shortcut icon" href="../assets/images/favicon.ico">
+   <link rel="stylesheet" href="../assets/js/font/css/font-awesome.css">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/order.css">
+   <link rel="stylesheet" href="../assets/js/jquery-toaster/toastr.css">
+</head>
+<body>
+  <div class="layout">
+    <div class="header">
+       <header>
+  <div class="logo">
+    <a href="../index.html">链融云</a>
+  </div>
+  <div class="nav">
+    <ul>
+      <li><a href="../index.html" >首页</a></li>
+      <li class="active"><a href="cloud.html#all">云市场</a></li>
+      <li><a href="../customer.html">客户</a></li>
+      <li><a href="../supplier.html">伙伴</a></li>
+      <li><a href="../customerCase.html">客户案例</a></li>
+    </ul>
+    <div class="search">
+      <input type="search" placeholder="搜索">
+      <i></i> 
+    </div>
+    <div class="login">
+      <a href="javascript:void(0)">登录</a>
+      <a href="../login/register.html">注册</a>
+    </div> 
+      <div class="personalInfor">
+     <h4 class="showUser"> <img src="../assets/images/index/user.png" style="border-radius:50%;width:48px;height:48px;vertical-align: middle;margin-right:5px;"><span></span><i class="fa fa-angle-up"></i></h4>
+     <div class="account">
+       <p class="on"><a href="javascript:void(0)">账号设置</a></p>
+       <p><a href="" class="withDraw">退出账号</a></p>
+     </div>   
+   </div>   
+  </div> 
+</header>
+    </div>
+   
+   <!--  <header>
+      <div class="logo">
+        <a href="../index.html">链融云</a>
+        <h1>云市场</h1>
+      </div>
+      <div class="login">
+        <div class="search">
+          <input type="search" placeholder="搜索">
+          <i></i>
+        </div>
+        <div class="user">
+          <ul>
+            <li>
+              <button>我的服务</button>
+            </li>
+            <li>
+              <button class="sure">提供商认证</button>
+            </li>
+            <li>
+              <div>
+                <img src="" alt="">
+              </div>
+          <select name="" id="">
+            <option value="">用户名</option>
+          </select>
+            </li>
+          </ul>          
+        </div>
+      </div>
+    </header> -->
+    <h4 style="margin-left: 140px; margin-bottom: 20px;"><i class="fa fa-shopping-bag"></i>
+    &nbsp;确定订单</h4>
+    <div id="order">      
+    </div>   
+      <div class="put">
+        <i></i>
+        <p>下单成功，请线下支付。</p>
+        <p>支付后联系运营人员确定。</p>
+        <p>联系方式: 13782364753</p>
+        <!-- <button><a href="cloud.html#all">订单列表</a></button> -->
+        <!-- <button class="sure">继续购买</button> -->
+        <button>返回云市场</button>
+      </div>
+
+    <div class="set-opacity">    
+    </div>
+   
+  </div>
+</div>
+<div id="waiting"><img src="../assets/images/waiting/waiting.gif" alt=""></div>
+</body>
+<script id = "tem" type="text/template">
+   <div class="order">      
+      <table>
+          <thead>
+          <tr>           
+            <th>商品名称</th>
+            <th>规格</th>
+            <th>周期</th>
+            <th>价格</th>            
+          </tr>
+        </thead>
+        <tbody>
+       <% if (!data) { %> 
+          <tr>         
+          <td>小贷租赁</td>
+          <td>30人</td>
+          <td>三个月</td>
+          <td>300元</td>         
+         </tr>
+         <% }else{ %>
+         <tr data-id = <%=data.id %>>         
+          <td><%=data.merName %></td>
+          <td><%= data.sptName %></td>
+          <td><%= data.timeLimit %></td>
+          <td><%= data.price %>元</td>         
+         </tr>
+         <% } %>
+        </tbody>
+      </table>
+      <label for="">订单备注:</label>
+      <textarea name="" id="" cols="30" rows="10"></textarea>       
+    </div>
+    <div class="confirm">
+      <p>订单金额<span style="color: #FF6602;">￥
+      <strong><%= data.price %></strong></span></p>            
+      <button>取消</button>
+      <button class="sure">确定下单</button>
+    </div>
+</script>
+<script src="../assets/js/jquery/jquery.js"></script>
+<script src="../assets/js/ejs/ejs.min.js"></script>
+<script src="../assets/js/jquery.cookie.js"></script>
+<script src="../assets/js/route.js"></script>
+<script src="../assets/js/tool.js"></script>
+<script src="../assets/js/common.js"></script>
+  <script src="../assets/js/getAjax.js"></script>
+  <script src="../assets/js/order.js"></script>
+  <script src="../assets/js/jquery-toaster/toastr.js"></script>
+<script src="../assets/js/jquery-toaster/toastr.config.js"></script>
+</html>

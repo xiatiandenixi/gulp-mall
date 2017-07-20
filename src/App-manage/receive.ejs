@@ -1,0 +1,33 @@
+                <div class="receive">
+                 <div>
+                    <ul> 
+                    <% if(data){ %>                          
+                    <% for(var i = 0; i < data.length; i ++)  { %> 
+                    <li data-id= <%= data[i].id %> >                  
+                      <p>
+                        <img src=<%= '../../static/images/grounding/' + data[i].icon %>  height="50" width="45">
+                      </p>
+                        <%= data[i].marketName %>
+                    </li>
+                    <% } %>  
+                     <% } %>                         
+                  </ul>
+                  <div class="appName" style="position: relative;">
+                     <label for="showSubtitles">商品名称</label>
+                    <input type="text">
+                  </div>
+                  <div class="openService">
+                    <label for="">开通服务</label>
+                    <div>
+                       <select name="" id="">                 
+                      <option value="1">人工服务</option>
+                    </select>
+                    <i class="fa fa-bars"></i>
+                    </div>                   
+                  </div>         
+                 </div>          
+                  <div class="step-btn" id="receive">
+                    <button>下一步</button>
+                  </div>
+                </div>
+

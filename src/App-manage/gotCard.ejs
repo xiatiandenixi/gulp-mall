@@ -1,0 +1,20 @@
+                <ul>
+                <% for(var i = 0; i < items.length; i++) { %>
+                  <li class="one-card">
+                      <% if(!items[i].logoImg){ %>                  
+                      <img src="../assets/images/grounding/Rectangle 13.png" alt="">
+                      <% } else { %> 
+                        <img src=<%=fileUrl+"/download?attachId=" + items[i].logoImg %>  alt=""> 
+                      <%} %>
+                      <div class="merName">                       
+                       <span title=<%= items[i].merName%> ><%= items[i].merName%></span>
+                        <p><i class="fa fa-gavel"></i>  成交量  :  <%= items[i].sales ? items[i].sales : 0 %> </p>
+                      </div>
+                      <div class="btn" data-id=<%=items[i].id %> >
+                        <button class="look-detail">查看详情</button>
+                        <button>下架</button>                      
+                      </div>
+                  </li>
+                <% } %>
+                </ul>
+                 

@@ -1,0 +1,661 @@
+ /*   ==== toast css start ====    */
+  #toast-container .toast-info{
+      display: block;
+      margin: auto;
+      position: absolute;
+      top: 17px;
+      left: 85px;
+ }
+ /*   ---- toast css end  -----    */  
+  select::-ms-expand { 
+    display: none; 
+  }
+  .grounding .test-empty:after {
+    content: "不能为空";
+    font-size: 10px;
+    height: 0;
+    line-height: 0;
+    display: inline-block;
+    bottom: -13px;
+    left: 85px;
+    color: red;
+    right: 0;   
+    position: absolute;
+  }
+   .grounding .test-telephone:after {
+    content: "请正确输入11位手机号码";
+    font-size: 10px;
+    height: 0;
+    line-height: 0;
+    display: inline-block;
+    bottom: -13px;
+    left: 85px;
+    color: red;
+    right: 0;   
+    position: absolute;
+  }
+   .grounding .test-length:after {
+    content: "不能超过90个字符";
+    font-size: 10px;
+    height: 0;
+    line-height: 0;
+    display: inline-block;
+    bottom: -13px;
+    left: 85px;
+    color: red;
+    right: 0;   
+    position: absolute;
+  }
+  .grounding .tips-length {
+    color: red;
+    font-size: 10px;
+    margin-left: -25px;
+  }
+  .layout header {
+    width: 100%;
+  }
+  .layout .logo a {
+    background: url(../../images/imfbp_logo.png) no-repeat 15% center;
+    background-color: #DD3730;
+    width: 200px;
+ }
+ .layout header h4 {
+  display: inline-block;
+  font-family: "MicrosoftYahe";
+  color: #666;
+  font-size: 20px;
+  margin-left: 20px;
+  font-weight: 500;
+ }
+  
+ /* =====主体部分===== */
+.layout  section {
+  background-color: #F8F8F8;
+} 
+ .layout aside dd.active{
+  border: none;
+  margin-left: -4px;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  padding-lef: 5px;
+  border-left: 4px solid #DD3730;
+  width: 100%;
+  background-color: #f8f8f8;
+}
+.layout aside {
+  float: left;
+  height: 429px;
+  width: 200px;
+  background-color: #fff;
+  min-height: 560px;
+  border-right: 1px solid #E9E9E9;
+}
+.layout aside dt {
+  font-size: 14px;
+  display: inline-block; 
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  margin-left: 30px; 
+}
+
+
+.layout aside dt,.layout aside dt a {
+   color: #999; 
+}
+
+.layout .l-aside dt ,.layout .l-aside dt a{
+   color: #DD3730;
+}
+.layout aside dl:first-child i:first-child {
+  background: url("../../images/grounding/app-hui.png")
+}
+.layout aside dl:nth-child(2) i:first-child {
+  background: url("../../images/grounding/business-hui.png")
+}
+.layout aside dl:nth-child(3) i:first-child {
+  background: url("../../images/grounding/order-hui.png")
+}
+.layout aside dl:nth-child(4) i:first-child {
+  background: url("../../images/grounding/interview-hui.png")
+}
+.layout aside dl:nth-child(5) i:first-child {
+  background: url("../../images/grounding/customer-hui.png")
+}
+
+.layout  dl.l-aside:first-child i:first-child {
+  background: url("../../images/grounding/app-red.png")
+}
+.layout dl.l-aside:nth-child(2) i:first-child {
+  background: url("../../images/grounding/business-red.png")
+}
+.layout dl.l-aside:nth-child(3) i:first-child {
+  background: url("../../images/grounding/order-red.png")
+}
+.layout dl.l-aside:nth-child(4) i:first-child {
+  background: url("../../images/grounding/interview-red.png")
+}
+.layout dl.l-aside:nth-child(5) i:first-child {
+  background: url("../../images/grounding/customer-red.png")
+}
+.layout aside dl i:first-child {
+  vertical-align: middle;
+  width: 14px;
+  height: 14px;
+  display: inline-block;
+  margin-right: 5px;  
+}
+.layout aside dt i:last-child {
+  position: relative;
+  display: inline-block;  
+  left: 20px;  
+}
+.layout aside dd {   
+  display: none;
+  margin-left: 0px;
+  line-height: 40px;   
+  height: 40px;
+  padding-left: 50px;
+  border-left: 4px solid transparent;
+}
+.layout aside dd.active{
+  width: 199px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: none; 
+  margin-left: 0px; 
+  padding-left: 50px;
+  border-left: 4px solid #DD3730; 
+  background-color: #f8f8f8;
+
+}
+.layout aside dd a {
+  display: inline-block;
+  width: 150px;
+  color: #999;
+}
+.layout aside dd.active a {
+  color: #333;
+}
+
+
+/* =====主体右侧部分=====*/
+.layout section article .main {
+  display: none;
+}
+.layout section article .selected {
+
+  display: block;
+  position: relative;
+
+}
+.layout .centerGrounding {  
+  width: 1080px;
+  min-height: 660px; 
+  margin: auto;
+}
+
+.layout .grounding {
+  position: relative;
+  overflow: hidden;
+  margin-top: 10px;
+}
+.first-app {
+  display: none;
+}
+.layout section .grounding .show-app {
+  display: inline-block;
+  padding-left: 40px;
+  position: relative;
+}
+ .layout section .product ol {
+  height: 80px;
+  width: 100%;
+  text-align: center;
+ }
+ .layout .product .line {
+  position: relative;
+  top: -6px;
+  display: inline-block;
+  width: 175px;
+  height: 0px;
+  border-bottom: 1px solid #D8D8D8;
+}
+.layout  .product ol li {
+  margin: 15px 0;
+  display: inline-block;
+  text-align: center;
+  font-size: 14px;
+  color: #999;
+}
+.product ol li.edit {
+  color: #1BA8ED;
+}
+ .product ol li i {
+  margin-top: 20px;
+  font-style: normal;
+  display: inline-block;
+  width: 9px;
+  height: 9px;
+  padding: 8px;
+  border-radius: 50%;
+  background: #D8D8D8;
+}
+.product ol li.edit i {
+  margin-top: 10px;
+  width: 25px;
+  height: 25px;
+  padding: 0;
+  background: url("../../images/grounding/edit.png");
+}
+.product ol li.finish i {
+  margin-top: 10px;
+  width: 25px;
+  height: 25px;
+  padding: 0;
+  background: url("../../images/grounding/right.png");
+}
+
+.product {
+  overflow: hidden;
+}
+.box {
+  display: none;
+  width: 100%;
+  height: 120%;
+  background-color: rgba(255, 255, 255, 0.9);
+  position: absolute;
+  left: 0;
+  top: 0; 
+ margin-bottom: 50px;
+}
+ #preview {
+    /* overflow-y: auto; */
+    font-size: 14px; 
+    padding: 36px 30px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    width: 805px;    
+    background: #fff;
+    position: relative;
+    left: 0px;
+    top: 20px;
+    /* top: -130px;
+     min-height: 630px;  */
+    right: 0;
+    bottom: 20px;
+    margin: auto;
+    z-index: 10;
+    -webkit-box-shadow: 1px 1px 3px 3px #D4D4D4;
+            box-shadow: 1px 1px 3px 3px #D4D4D4;
+    font-family: "微软雅黑";
+}
+ #preview i {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  color: #f11616;
+}
+ #preview .table {
+    margin-left: 10px;
+    display: inline-block;
+    border: 1px solid #f8f8f8;
+    border-collapse: collapse;
+    text-align: center;
+    vertical-align: top;
+}
+
+#preview td {
+   width: 100px;
+  height: 36px;
+  line-height: 36px;
+  border: 1px solid #f8f8f8;
+}
+
+
+ #preview h1 {
+  font-size: 16px;
+  font-weight: 700;
+}
+ #preview h4 {
+  font-size: 14px;
+  margin-top: 10px;
+}
+ #preview label {
+    margin-right: 10px;
+    font-weight: 500;
+    width: 80px;
+    display: inline-block;   
+    text-align: right;
+    margin-left: 20px;
+}
+
+
+/* ====预览模式====*/
+ #preview h2 {
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+ #preview li {
+    width: 600px;
+    margin-top: 10px;
+    word-wrap: break-word;
+}
+ #preview span {
+  display: inline-block;
+  width: 480px;
+  vertical-align: top;
+  min-height: 25px;
+}
+.pre-sell {
+
+  position: relative;
+}
+ #preview div{
+  /* border-bottom: 1px solid #F8F8F8; 
+  padding-bottom: 20px; */
+  margin-bottom: 20px;
+}
+ #preview button {
+  /* position: absolute; 
+  left: 0;
+  right: 0; */
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;  
+  height: 36px;
+  width: 179px;
+  line-height: 36px;
+  background-color: #1BA8ED;
+  color: #fff;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  outline-style: none;
+}
+button {
+  cursor:pointer;
+}
+.grounding .show-app i {
+  cursor: pointer;
+}
+ input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+    }
+    input[type="number"]{
+        -moz-appearance: textfield;
+}
+.grounding .sale-size input:focus {
+  border-color: #999999;
+}
+* {
+  cursor: default;
+}
+input, textarea {
+  cursor: text;
+}
+a , select{
+  cursor: pointer;
+}
+aside h4 {
+  cursor: pointer;
+}
+/* ===已经上架商品的样式 === */
+* {
+  font-family: "Microsoft YaHei";
+}
+.selected .shelves {
+ width: 980px;
+ margin: auto;
+ margin-top: 20px;
+ height: 625px;
+ overflow: hidden;
+ font-family: "Microsoft YaHei";
+}
+.selected .shelves .title {
+  width: 936px;
+  height: 50px;
+  background: #fff;  
+}
+.selected .shelves dt , .selected .shelves dl {
+  display: inline-block;
+  width: 105px;
+  text-align: center;
+  float: left;
+}
+.selected .shelves dd {
+  display: none;
+}
+.selected .shelves dt {
+  width: 105px;
+  outline-style: none;
+  line-height: 50px;
+  height: 50px;
+  border: none;
+  border-right: 1px solid #F5F5F5;
+}
+.selected .getting-select {
+  position: relative;
+  display: inline-block;
+}
+.getting-select div {   
+  display: inline-block;
+  position: relative;
+  border-right: 1px solid #F5F5F5;
+  width: 110px;
+  height: 50px;
+}
+.selected .getting-select i {
+   position: absolute;  
+    right: 10px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    width: 15px;
+    height: 16px;
+    z-index: 0;
+}
+.selected .shelves select {
+  position: relative;
+  background: transparent;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    outline: none;
+    z-index: 1;
+   -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  outline-style: none;
+  padding-left: 10px;  
+  width: 100%;
+  height: 100%;
+  border: none;  
+}
+.selected .shelves .search { 
+  line-height: 50px;
+  float: right;
+  right: 20px;
+}
+.selected .title label {
+    float: left;
+    line-height: 50px;
+    margin-left: 20px;
+}
+
+.selected .title .search input {
+  font-size: 12px;
+  width: 297px !important;
+}
+.selected .title .search input:focus {
+  width: 310px !important;
+}
+.selected .shelves .search i {
+  top: 60%;
+  right: 9px;
+}
+/*  ===上架商品信息=== */
+ #gotcard ,#gettingcard { 
+  height: 530px;
+  overflow: hidden;
+  width: 100%;
+ }
+ #gotcard ul, #gettingcard ul {
+  padding-left: 3px;
+ }
+  #gotcard .one-card ,#gettingcard .one-card {
+  margin-top: 20px;
+  margin-right: 20px;
+  display: inline-block;
+  vertical-align: top;
+  padding: 20px;
+  background: #fff;
+  width: 295px;
+  height: 147px; 
+  -webkit-box-shadow: rgb(212, 212, 212) 1px 1px 3px 2px; 
+          box-shadow: rgb(212, 212, 212) 1px 1px 3px 2px;
+
+
+ }
+ #gotcard img , #gettingcard img {
+  margin-top: -10px;
+  border: none;
+  width: 97px;
+  height: 79px;
+  vertical-align: middle;  
+ }
+
+ #gotcard .merName , #gettingcard .merName{
+  margin-left: 10px;
+  display: inline-block;
+  font-family: PingFangSC-Regular; 
+  color: #333333;  
+ }
+ #gotcard .merName span, #gettingcard .merName span {
+    font-size: 17px !important;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    width: 140px;
+    display: inline-block;
+    /*margin-top: -5px; */
+ }
+
+  #gotcard p ,#gettingcard p{
+    margin-top: 10px;
+    font-size: 12px;
+    font-weight: 400;
+  }
+  #gotcard .btn {
+    margin-right: -20px;
+    /*margin-top: 5px; */
+  }
+  #gotcard .btn , #gettingcard .btn {
+    text-align: right;    
+  }
+ #gotcard button , #gettingcard button {
+  outline-style: none;
+  width: 60px;
+  height: 28px;
+  color: #1BA8ED;
+  background-color: #fff;
+  border-radius: 5px;
+  border: 1px solid #1BA8ED;
+  line-height: 28px;
+  text-align: center;
+  margin-right: 10px;
+  font-size: 12px;
+  padding-left: 5px;
+  padding-right: 5px;
+ }
+ #gettingcard .btn i {
+   background: url("../../images/grounding/trash.png") no-repeat ;
+   width: 18px;
+   height: 21px;
+   display: inline-block;
+   position: relative;
+   top: 3px;
+ }
+ #gotcard .look-detail , #gettingcard .look-detail{
+  color: #fff;
+  background-color: #1BA8ED;
+  width: 75px;
+ }
+.nofound {
+  text-align: center;
+  font-size: 16px;
+  color: red;
+  margin-top: 20px;
+}
+
+
+/* submitInfo */
+.grounding .submitInfo {
+  position: relative;
+  width: 968px;
+  height: 530px;
+  background: #fff;
+}
+.grounding .submitInfo div {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  width: 410px;
+  height: 300px;
+
+}
+.grounding .submitInfo p {
+  margin-top: 10px;
+  text-align: center;
+  font-size: 22px; 
+}
+.grounding .submitInfo a {
+  display: inline-block;
+  width: 210px;
+  height: 40px;
+  border-radius: 5px;
+  line-height: 40px;
+  text-align: center;
+  background: #1BA8ED;
+  color: #fff;
+  font-size: 20px;
+}
+
+
+
+.provider{
+  position:relative;
+}
+.contentBgc {
+    margin:40px;
+    background: #F8F8F8;
+}
+.basicContent{
+  width:100%;
+  margin:0;
+}
+
+.contentBgc .uploadImg {
+    overflow: hidden;
+    width: 530px;
+    height: 460px;
+    position: absolute;
+    right: 0px!important;
+    bottom: 40px;
+}
+.layout section article{
+  margin:0px;
+}
+.contentBgc .content{
+  background: #fff;
+  border-radius: 8px;
+  height: 100%;
+  padding: 20px 50px!important;
+  position: relative;
+  width: 1070px;
+}
+
+

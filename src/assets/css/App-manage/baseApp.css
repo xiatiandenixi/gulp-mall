@@ -1,0 +1,254 @@
+.grounding #editor .w-e-text {
+  padding-top: 10px; 
+}
+.grounding #editor .w-e-text-container {
+  height: 170px !important;
+}
+/*======基本信息======*/
+.grounding .basic-message {
+  margin-bottom: 20px;
+  padding: 30px 0 20px 30px;
+  width: 968px;
+  font-family: "微软雅黑";
+  background-color: #fff;
+  position: relative;
+  z-index: 10; 
+}
+.grounding .basic-message .left-upload {
+  width: 200px;
+  float: left;
+  text-align: center;
+  margin-right: 40px;  
+}
+.grounding #upload-image {
+  width: 189px;
+  height: 142px;
+  border-radius: 5px;
+  border: 1px dotted #DBDBDB; 
+}
+.grounding #upload-image img {
+  
+  width: 100%;
+  height: 100%; 
+}
+.grounding .text-edit #editor {
+  width: 589px; 
+}
+.grounding .left-upload input {
+  display: none;
+}
+.grounding .left-upload button {
+  width: 120px;
+  height: 40px;
+  padding: 0 10px;
+  margin: 10px 0;
+}
+
+.grounding .left-upload p { 
+  font-size: 12px;
+  color: #999;
+  margin-left: 20px;
+}
+.basic-message .right-fill {
+  overflow: hidden;
+}
+.right-fill .kind-one, .right-fill .kind-two {
+  height: 36px;
+  width: 110px; 
+  position: relative;
+  display: inline-block;
+  border-radius: 5px;
+  border: 1px solid #ccc;  
+}
+.right-fill .kind-one i, .right-fill .kind-two i {
+  position: absolute;  
+    right: 10px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    width: 15px;
+    height: 16px;
+    z-index: 0;
+}
+
+.grounding .right-fill select {
+    background: transparent;
+    z-index: 1;
+    width: 100%;
+    height: 100%;    
+    position: relative;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    outline-style: none;
+    padding-left: 10px;
+    border: 0 none;     
+}
+.grounding .right-fill li {
+  margin-bottom: 25px;
+  position:relative;
+}
+/*//  .grounding .right-fill li span{*/
+/*//   position:absolute;*/
+/*//   left: 288px;*/
+/*//   display:none;*/
+/*//   top: 9px;*/
+/*// } */
+/*// .grounding .right-fill .text-edit span {*/
+/*//   position: static;*/
+/*//   display: inline-block;*/
+/*// }*/
+.grounding .right-fill label {
+  width: 83px;
+  display: inline-block;
+}
+ .grounding .right-fill input {
+  color: #000 !important;
+  width: 300px;
+}
+.grounding .right-fill textarea {
+  color: #000;
+}
+.grounding .right-fill textarea:focus{
+  border-color: #1BA8ED;
+}
+.grounding .basic-message .right-fill input:focus {
+  border-color: #1BA8ED;
+}
+.grounding .right-fill li:nth-child(2) input{
+  color: #000;
+  width: 458px;
+}
+.grounding .right-fill textarea {
+  outline-style: none;  
+  width: 591px;
+  height: 120px;
+  vertical-align: top;
+  padding: 10px 0 0 10px;
+  border-radius: 5px;
+}
+.grounding .text-edit {
+  display: inline-block;
+  vertical-align: top;
+}
+.grounding .basic-message .bannerImg div:first-child { 
+  height: 89px;
+  line-height: 89px;
+  border-radius: 8px;
+  border: 1px dotted #DBDBDB;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+
+}
+.grounding .basic-message .bannerImg  img{
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 5px;
+  width: 588px;
+  height: 87px; 
+}
+
+.grounding .basic-message .bannerImg , .grounding .basic-message .img {
+  display: inline-block;
+  vertical-align: top;  
+  width: 590px;
+}
+
+.grounding .basic-message .img {
+  padding: 45px 0px;
+ position: relative;
+ text-align: center;
+}
+.grounding .basic-message .img-active {
+  padding: 0;
+  position: relative;
+  text-align: left;
+  display: inline-block;
+  vertical-align: top;
+}
+.grounding .basic-message .six-img dt {
+  display: inline-block;
+  margin-right: 5px;
+  width: 89px;
+  height: 89px;
+  border-radius: 8px;
+  position: relative;  
+}
+.grounding .basic-message dt img {
+  width: 89px;
+  height: 89px;
+}
+.grounding .six-img i {
+  display: none;
+  color: red;
+  position: absolute;
+  right: 2px;
+  top: 0px;
+}
+.grounding .uploadImg  button {
+   width: 90px;
+    margin: 0;
+    height: 40px;
+    line-height: 40px;
+    color: #fff;
+    font-size: 14px;
+    padding: 0 10px;
+}
+.grounding .img-active p {
+  display: inline-block;
+}
+.grounding .uploadImg {
+  height: 26px;
+  line-height: 26px;
+  font-size: 12px;
+  color: #999;  
+}
+
+.grounding .img .uploadImg {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+.grounding .img-active .uploadImg {
+  position: static !important;
+}
+
+.grounding .show-app .step-btn {
+ text-align: right;
+}
+/*// .grounding .errMessage{*/
+/*//     color: #D50000!important;*/
+/*//     font-size: 12px!important;*/
+/*// }*/
+/*// .grounding .showSubtitles{*/
+/*//   left: 420px!important;*/
+/*// }*/
+/*// .grounding .showSummarize{*/
+/*//   left: 548px!important;*/
+/*// }*/
+/*// .grounding .showEditor{*/
+/*//   top:10px!important;*/
+/*//   left: 100px!important;*/
+/*//   width: 564px!important;*/
+/*//   height: 92px!important;*/
+/*// }*/
+/*// .grounding .showPhone {*/
+/*//   left: 254px!important;*/
+/*// }*/
+/*// .grounding .showName {*/
+/*//   left: 299px!important;*/
+/*// }*/
+.grounding .sale-size .pageon {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: rgba(255, 255, 255, 0.51);
+}
+.grounding #videoFile {
+    top: 472px!important;
+}

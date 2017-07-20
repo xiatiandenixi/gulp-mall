@@ -1,0 +1,72 @@
+                <div class="preview" id="preview">
+                  <i class="fa fa-close"></i>
+                  <h1>查看详情</h1>
+                  <div class="preview-image" style="position: absolute;right: 40px;">
+                      <% if(data.mer.logo_img){ %>
+                        <img src=<%= imgUrl["1"] + data.mer.logo_img %>   alt="1" id="imgid" width="189" height="142">
+                      <% }else{ %>
+                     <img src="../assets/images/grounding/defaultLogo.png" alt="2" id="imgid" width="189" height="142">
+                     <% } %>
+                  </div>
+                  <%  if(data.mer.market != 4) { %>
+                  <div class="pre-creatApp">
+                     <% for(var i = 0 ; i < data.apps.length; i++){ %> 
+                    <h4><label>应用名称 :</label><span><%=data.apps[i].app.app_name %></span></h4>                  
+                    <ul>
+                      <% for(var j = 0; j < data.apps[i].appModule.length; j++){ %> 
+                      <li>
+                        <label>小应用名称 :</label>
+                      <%= data.apps[i].appModule[j].moduleName  %>
+                        <label>接口地址 :</label>
+                        <%= data.apps[i].appModule[j].moduleUrl %>
+                      </li>
+                      <% } %>                  
+                    </ul>
+                     <% } %>                
+                  </div>
+                  <% } %>
+                  <div class="pre-basic">                   
+                    <ul>
+                      <li><label>显示名称 :</label><span><%=data.mer.merchandise_name %></span></li>
+                      <li><label>显示副标题 :</label><span><%=data.mer.subhead %></span></li>
+                      <li><label >概述 :</label><span><%= data.mer.remark %></span></li>
+                      <li><label>详情 :</label><span id="preview-course"></span></li>
+                      <li><label>联系方式 :</label><span><%= data.mer.contact_way %></span></li>
+                    </ul>
+                  </div>
+                   <%  if(data.mer.market != 4) { %>
+                  <div class="pre-sell">                    
+                    <ul>
+                    <% if(data.mer.selling_mode == "0") { %>
+                      <li style="margin-bottom: 20px;"><label>订购方式 : </label> <span>按周期</span></li>
+                    <% } %>
+                     <% if(data.mer.selling_mode == "1") { %>
+                      <li style="margin-bottom: 20px;"><label>订购方式 : </label> <span>按次数</span></li>
+                    <% } %>
+                     <% if(data.mer.selling_mode == "2") { %>
+                      <li style="margin-bottom: 20px;"><label>订购方式 :</label> <span> 面议</span></li>
+                    <% } %>
+                      <div>
+                       <label>价格 :</label>                       
+                        <table  class="table">
+                        <% for(var i = 0; i < data.spts.length; i++) { %>
+                          <tr>
+                            <td><%= data.spts[i].sptName %> </td>
+                            <td><%= timeFormat[data.spts[i].timeLimit] %></td>
+                            <td><%= data.spts[i].price %> 元</td>
+                          </tr>
+                        <% } %>                         
+                        </table>
+                      </div>                     
+                    </ul>
+                  </div>
+                  <% }else{ %>
+                    <div class="pre-sell">                    
+                    <ul>
+                      <li style="margin-bottom: 20px;"><label>订购方式 :</label> <span>面议</span></li>
+                          
+                    </ul>
+                  </div>
+                  <% } %>
+                 <div style="text-align: center;"> <button class="btn-close">关闭</button></div>
+                </div>

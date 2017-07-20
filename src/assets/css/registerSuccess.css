@@ -1,0 +1,223 @@
+.typePage{
+    /*width:1280px;*/
+    /*width: 100%;*/
+    padding: 0!important;
+  }
+  .logHead{
+    height: 70px;
+    background: #fff;
+  }
+  .logHead h1{
+    float: left;
+    width: 100px;
+    height: 30px;
+    background: url(../images/register/imfbp_logo.png) no-repeat center center;
+    background-size:100px 30px;
+    text-indent: -999px;
+    margin-top: 20px;
+    margin-left:10px;
+  }
+  .logHead i{
+    float: left;
+    background:#DD3730;
+    width:3px;
+    margin-left:15px;
+    margin-top:22px;
+    height:22px;
+  }
+  .logHead .enroll{
+    float: left;
+    width: 50px;
+    height: 70px;
+    line-height: 70px;
+    font-size: 24px;
+    margin-left: 15px;
+    color: #DD3730;
+  }
+  .logHead p{
+    width: 192px;
+    height: 16px;
+    margin-top:35px; 
+    float: left;
+    font-size: 12px;
+    margin-left: 10px;
+    color:#666;
+  }
+  .logHead .log{
+    float: right;
+    height: 70px;
+  }
+  .logHead .loginIn{
+    float: left;
+    height: 70px;
+    line-height: 70px;
+    text-align: center;
+    width: 90px;
+    background:#fff;
+    color: #333;
+    font-size: 14px; 
+    cursor: pointer;
+  }
+  .logHead .loginIn:hover{
+    color:#DD3730;
+  }
+  .logHead .register{
+    float: left;
+    height: 70px;
+    line-height: 70px;
+    text-align: center;
+    width: 90px;
+    background:#DD3730;
+    color: #fff;
+    font-size: 14px;
+    cursor: pointer;
+  }
+  .content{
+    position: relative;
+  }
+  .contentTop{
+    background: #F8F8F8;
+    width:100%;
+    height: 654px;
+  }
+  .textBox{
+    width: 556px;
+    height: 588px;
+    padding:50px;
+    padding-top:40px;
+    position: absolute;
+    left: 50%;
+    margin-left: -278px;
+    top:20px;
+    background: #fff;
+  }
+.textBox .loginIcon {
+    width: 103px;
+    height: 72px;
+    position: absolute;
+    left: 50%;
+    margin-left: -52px;
+    top: 106px;
+}
+  .information{
+    width:223px;
+    height:80px;
+    font-size:22px;
+    position:absolute;
+    left:167px;
+    top:195px;
+    text-align:center;
+    line-height:40px;
+  }
+  .manipulate{
+    width:223px;
+    height:200px;
+    position:absolute;
+    left: 167px;
+    top:365px;
+    text-align:center;
+  }
+  .manipulate p{
+    font-size:14px;
+    font-weight:bold;
+  }
+  .manipulate button{
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:210px;
+    height:50px;
+    font-size:20px;
+    color:#fff;
+    outline:none;
+    border:none;
+    border-radius:5px;
+    cursor:pointer;
+  }
+  #index{
+    background:#DD3730;
+    left: 6px;
+    top: 30px;
+  }
+  #index:hover{
+    background:#C40B15;
+  }
+  #personal{
+    background: #1BA8ED;
+    left: 6px;
+    top: 95px;
+  }
+  #personal:hover{
+    background:#0088CC;
+  }
+  .points{
+    position: absolute;
+    top: 156px;
+    right: -415px;
+  }
+  .points p{
+    width: 120px;
+    height: 30px;
+    color: #fff;
+    font-size: 24px;
+    border-bottom: none!important;
+  }
+  .points span{
+    display: inline-block;
+    width: 110px;
+    height: 36px;
+    line-height: 36px;
+    text-align: center;
+    background: #fff;
+    color:#1BA8ED;
+    font-size: 16px;
+    border-radius: 20px;
+    margin-top: 16px;
+    cursor:pointer;
+    /*font-weight: bold;*/
+  }
+  
+  .textBox .agreeSign{
+    position: absolute;
+    left: 173px;
+    bottom: 40px;
+  }
+  .textBox .agree{
+    float: left;
+    margin-left: 10px;
+    width: 210px;
+    height: 20px;
+    font-size: 12px;
+    color: #999;
+    border-bottom: none !important;
+  }
+  .textBox .agree i{
+    float: left;
+    width: 14px;
+    height: 14px;
+    font-size: 12px;
+    background: #999;
+    color: #fff;
+    border-radius: 20px;
+    line-height: 14px;
+    text-align: center;
+    cursor: pointer;
+    margin-right: 5px;
+  }
+  .textBox .agree i.on{
+    background: #1BA8ED;
+  }
+  .textBox .signUp{
+    display: inline-block;
+    width:210px;
+    height: 50px;
+    background:#999;
+    color: #fff;
+    line-height: 50px;
+    text-align: center;
+    border:1px solid transparent;
+    border-radius:30px;
+    font-size: 20px;
+    cursor: pointer;
+    outline: none;
+  }

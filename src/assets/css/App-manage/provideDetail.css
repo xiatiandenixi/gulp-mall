@@ -1,0 +1,125 @@
+  .provideDetail{
+      background:#fff;
+   /*   box-shadow: 0 7px 10px 0 #D4D4D4;*/
+      border-radius: 10px;
+      margin:100px auto;
+      width: 700px;
+      height: 600px;
+      padding:26px 36px 36px 36px; 
+      border: 1px #D4D4D4 solid;
+    }
+    .provideDetail h3{
+      font-size: 20px;
+      color: #333333;
+      height: 28px;
+      padding-bottom:40px;
+      border-bottom: 1px solid #F8F8F8;
+    }
+    .basicInfo{
+      overflow: hidden;
+      padding: 20px 0px;
+      border-bottom: 1px solid #F8F8F8;
+    }
+    .basicInfo h4{
+      height: 22px;
+      padding-bottom: 40px;
+      font-size: 16px;
+    }
+    .basicInfoLeft{
+      float: left;
+      width: 300px;
+      height: 110px;
+      font-size: 14px;
+      color: #333333;
+      line-height: 25px;
+    }
+    .basicInfoLeft p span:nth-child(2){
+      float: right;
+      width: 200px;
+    }
+    .basicInfoRight{
+      float: right;
+      width: 315px;
+      height: 110px;
+      font-size: 14px;
+      color: #333333;
+      line-height: 25px;
+    }
+    .basicInfoRight p span:nth-child(2){
+      float: right;
+      width: 200px;
+    }
+    .indent{
+      position:relative;
+    }
+    .indent h4{
+      height: 22px;
+      padding: 20px 0px;
+      font-size: 16px;
+    }
+    .indent table{
+      margin-top:10px;
+      position: relative;
+      z-index: 1;
+      border-collapse: collapse;
+    }
+    .indent th{
+      background:#F8F8F8;
+      width: 233px;
+      height: 60px;
+    }
+    .popup .backgroundFill{
+      position: absolute;
+      left: -36px;
+      top: 50px;
+      height: 60px;
+      width: 698px;
+      background:#F8F8F8;
+      z-index: 0;
+    }
+    .indent td{
+      width: 233px;
+      height: 60px;
+      text-align: center;
+      border-bottom: 1px solid #F8F8F8;
+    }
+    .orderComment{
+      margin-top: 20px;
+      font-size: 14px;
+      line-height: 25px;
+    }
+    .orderComment p{
+      float: left;
+    }
+    .orderComment textarea{
+      float: left;
+      width: 200px;
+      height: 100px;
+      resize:none;
+      background: #fff;
+      border: none;
+    }
+    .popup .close{
+      position:absolute;
+      left: 240px;
+      top: 285px;
+      width: 128px;
+      height: 36px;
+      line-height: 36px;
+      text-align: center;
+      background: #1BA8ED;
+      border-radius: 5px;
+      font-size: 16px;
+      color: #FFFFFF;
+      cursor: pointer;
+    }
+    #mount{
+      position:absolute;
+      left:0px;
+      top:0px;
+      background: rgba(255,255,255,0.90);
+      width:100%;
+      height:100%;
+      z-index: 10;
+      display: none;
+    }

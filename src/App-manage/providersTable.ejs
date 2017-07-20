@@ -1,0 +1,22 @@
+ <% for (var i = 0;i < data.items.length; i++){ %>
+    <tr>
+        <td style="color: #1BA8ED;" class="userId" merId=<%=data.items[i].merId%> orderFormNo=<%=data.items[i].orderFormNo %>><%=data.items[i].orderFormNo %></td>
+        <td><%=data.items[i].merName %></td>
+        <td><%=data.items[i].sptName %><%=window.timeLimitStatus[data.items[i].timeLimit] %><%=data.items[i].price %>元</td>
+        <td><%=data.items[i].payPrice %>元</td>
+        <td><%=data.items[i].tenant %></td>
+        <td><%=data.items[i].creationtime %></td>
+
+        <% if (data.items[i].listStatus=="0"){ %>
+        <td style="color:#DD3730"><%=listStatus[data.items[i].listStatus]%></td>
+        <% } else{%>
+         <td style="color:#1BA8ED"><%=listStatus[data.items[i].listStatus]%></td>
+        <% } %>  
+
+        <% if (data.items[i].openStatus=="0"){ %>
+        <td style="color:#DD3730" class="on"><%=openStatus[data.items[i].openStatus]%></td>
+        <% } else{%>
+         <td style="color:#1BA8ED" class="on"><%=openStatus[data.items[i].openStatus]%></td>
+        <% } %>  
+    </tr>
+<% } %>  

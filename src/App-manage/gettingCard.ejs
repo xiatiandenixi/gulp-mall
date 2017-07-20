@@ -1,0 +1,29 @@
+   <ul>              
+                    <% for(var i = 0; i < items.length; i++) { %>
+                  <li class="one-card">                   
+                      <% if(!items[i].logoImg){ %>                  
+                      <img src="../assets/images/grounding/Rectangle 13.png" alt="">
+                      <% } else { %> 
+                        <img src=<%=fileUrl+"/download?attachId=" + items[i].logoImg %>  alt=""> 
+                      <%} %>
+                      <div class="merName">                       
+                       <span title=<%= items[i].merName%>> <%= items[i].merName %></span>
+                        <p> <%= appStatus[Number(items[i].listStatus)].text %></p>
+                      </div>
+                      <% if(items[i].listStatus == "1") { %>
+                      <div class="btn disable-edit">
+                        <button class="look-detail" style="background: #666; border-color: #666;color: white;">
+                             <%= appStatus[Number(items[i].listStatus)].button %> </button>     
+                      </div>
+                      <%}else{%>
+                        <div class="btn" data-id=<%=items[i].id %>>
+                        <button class="look-detail" data-status= <%= items[i].listStatus %> >
+                             <%= appStatus[Number(items[i].listStatus)].button %> </button> 
+                        <span>
+                          <i></i>
+                        </span>
+                      </div>
+                      <% } %>
+                  </li>
+                <% } %>
+                </ul>

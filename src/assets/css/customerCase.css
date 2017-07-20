@@ -1,0 +1,89 @@
+body{
+  background: #F8F8F8;
+}
+.customerCaseBanner img{
+  width: 100%;
+  height:310px;
+  display: block;
+}
+.customerCaseContent{
+  width:1278px;
+  margin: 0 auto;
+  padding: 0px 45px;
+}
+.customerCaseContent .financial h4{
+  font-size: 24px;
+  color: #333333;
+  margin:20px 0px;
+}
+.customerCaseContent ul li{
+  background: #FFFFFF;
+  border: 1px solid #E9E9E9;
+  width:288px;
+  height:238px;
+  margin-right:10px;
+  margin-bottom:10px;
+  float: left;
+}
+.customerCaseContent ul li:hover .financialHover{
+  display:inline-block;
+}
+    
+.customerCaseContent ul li .financialHover{
+  position: absolute;
+  left: 0px;
+  top:-1px;
+  width:288px;
+  height:238px;
+  background: rgba(255,255,255,0.95);
+  border: 1px solid #E9E9E9;
+  box-shadow: 0 4px 10px 0 ;
+  color:rgba(227,227,227,0.50);
+  display:none;
+}
+.customerCaseContent ul li .financialHover p{
+  font-size: 18px;
+  color: #333333;
+  margin-top:57px;
+  margin-bottom: 16px;
+  text-align:center;
+}
+.customerCaseContent ul li .financialHover strong{
+  font-weight: normal;
+  display:block;
+  text-align:center;
+  font-size: 14px;
+  color: #666666;
+}
+.customerCaseContent ul li .financialHover a{
+  position:absolute;
+  left:87px;
+  bottom: 32px;
+  width:117px;
+  height:36px;
+  line-height:36px;
+  color:#DD3730;
+  border: 1px solid #DD3730;
+  border-radius: 5px;
+  text-align:center;
+  font-size: 16px;
+  cursor: pointer;
+}
+.customerCaseContent ul li img{
+  display:block;
+  width:220px;
+  height:123px;
+  margin:20px auto;
+}
+.customerCaseContent ul li>p{
+  font-size: 18px;
+  color: #333333;
+  text-align: center;
+}
+.customerCaseContent ul li>span{
+  display:block;
+  font-size: 14px;
+  color: #666666;
+  text-align:center;
+  margin-top: 7px;
+}

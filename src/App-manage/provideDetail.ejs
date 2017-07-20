@@ -1,0 +1,59 @@
+  <div class="popup">
+    <div class="provideDetail">
+    <h3>订单详情</h3>
+    <div class="basicInfo">
+      <h4>基本信息</h4>
+      <div class="basicInfoLeft">
+        <p><span>订单编号：</span><span><%=data.orderFormNo%></span></p>
+        <p><span>采购方：</span><span><%=data.tenant%></span></p>
+
+        <p><span>采购联系人：</span><span><%=data.userRealNameT%></span></p>
+
+        <p>
+          <span>支付状态：</span>
+          <% if (data.listStatus=="0"){ %>
+           <span style="color:red"><%=listStatus[data.listStatus]%></span>
+          <% } else{%>
+            <span style="color:green"><%=listStatus[data.listStatus]%></span>
+          <% } %> 
+        </p>
+      </div>
+      <div class="basicInfoRight">
+        <p><span>下单时间：</span><span><%=data.creationtime%></span></p>
+
+        <p><span>采购方手机号：</span><span><%=data.userPhoneT%></span></p>
+        <p><span>采购方邮箱：</span><span><%=data.userEmailT%></span></p>
+        <p>
+          <span>开通状态：</span>
+          <% if (data.openStatus=="0"){ %>
+           <span style="color:red"><%=openStatus[data.openStatus]%></span>
+          <% } else{%>
+            <span style="color:green"><%=openStatus[data.openStatus]%></span>
+          <% } %> 
+        </p>
+      </div>
+    </div>
+    <div class="indent">
+      <h4>订单信息</h4>
+      <table>
+         <tr>
+            <th>商品名称</th>
+            <th>销售规格</th>
+            <th>价格</th>
+        </tr>
+        <tr>
+            <td><%=data.merName%></td>
+            <td><%=data.sptName%><%=timeLimitStatus[data.timeLimit]%></td>
+            <td><%=data.payPrice%>元</td>
+        </tr>
+      <table>
+      <div class="backgroundFill"></div>
+      </div>
+      <div class="orderComment">
+        <p>订单备注：</p>
+        <textarea disabled><%=data.remark%></textarea>
+      </div>
+      <div style="clear: both;"></div>
+      <p class="close">关闭</p>
+    </div>
+  </div>

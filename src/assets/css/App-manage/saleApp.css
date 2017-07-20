@@ -1,0 +1,140 @@
+/*=======销售规则======== */
+.grounding .info-null {
+    text-align: center;
+    margin-top: 5px;
+    margin-left: 130px;
+    font-size: 10px;
+    color: red;
+}
+.grounding .free-day {
+  position: relative;
+  display: inline-block;
+}
+.grounding .sale-size input:focus{
+  border: 1px solid rgb(27, 168, 237);
+}
+.grounding .sale-size {
+  margin-bottom: 50px;
+  padding: 30px 0 30px 30px;
+  width: 968px;
+  /* height: 632px; */
+  background-color: #fff;
+  position: relative;
+  z-index: 10;
+}
+.sell input:nth-child(n){
+  margin-left: 58px;
+  margin-right: 10px;
+}
+.sell input:nth-child(2n){
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.grounding .sale-select div {
+   position: relative;
+  display: inline-block;
+  border-radius: 5px;  
+  width: 80px;
+  height: 36px;
+  border: 1px solid #ccc;
+}
+.grounding .sale-size .sale-select i {
+    background-image: none;
+    position: absolute;  
+    right: 5px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    width: 15px;
+    height: 16px;
+    z-index: 0;
+}
+.grounding .sale-select  select {   
+    font-size: 14px;
+    background: transparent;
+    z-index: 1;
+    width: 100%;
+    height: 100%;    
+    position: relative;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    outline-style: none;
+    padding-left: 10px;
+    border: 0 none;         
+}
+.grounding .sale-size label {
+  width: 100px;
+  display: inline-block;
+}
+
+.grounding .sale-size li {
+  margin-top: 20px;
+}
+.grounding .period li:first-child {
+  margin-top: 0px;
+}
+.grounding .sale-size table {
+  text-align: center;
+  display: inline-block;
+  width: 334px;
+  /* height: 163px; */
+  vertical-align:top;
+}
+.grounding .sale-size td input{
+  padding-left: 15px;
+  margin: 10px;
+  border: 1px solid #ccc;
+  height: 28px;
+  width: 100px;
+}
+.grounding .sale-size td span {
+  width: 20px;
+  margin-right: 15px;
+}
+.grounding .sell h4 i {
+   display: inline-block;
+    width: 22px;
+    height: 22px;
+    background: url(../../images/grounding/add.png);
+    margin-left: 15px;
+    margin-top: -5px;
+}
+.grounding .sale-size i {
+  vertical-align: middle;
+  display: inline-block;
+  width: 22px;
+  height: 22px;
+  background: url("../../images/grounding/hui-right.png");
+}
+.grounding .sale-size i.active {
+  background: url("../../images/grounding/blue-right.png");
+}
+.grounding .sell li i {
+  background: url("../../images/grounding/minus.png");
+}
+.grounding .period {  
+  margin-bottom: 20px;
+}
+.grounding .sale-size td:nth-child(3) {
+ border: 1px solid #f8f8f8;
+}
+.grounding .sale-size td:nth-child(1) {
+  background-color: #EAEAEA;
+  border: 1px solid #fff;
+  width: 76px;
+}
+.grounding .sale-size td:nth-child(2) {
+  width: 92px;
+  border: 1px solid #fff;
+  background-color: #F8F8F8;
+}
+.grounding .sale-size span {
+ padding-left: 5px;
+ width: 100px;
+ display: inline-block;
+}
+.grounding .sale-size  .step-btn {
+  bottom: 10px;
+  position: absolute;
+}

@@ -1,0 +1,416 @@
+/*
+KISSY CSS Reset
+*/
+/* 清除内外边距 */
+body {
+  font-family: "Microsoft YaHei";
+  font-size: 14px;
+  line-height: 1.42857;
+  color: rgb(51, 51, 51);
+  background-color: rgb(255, 255, 255); 
+  position:relative;
+  width: 100%;
+  height: 100%;
+}
+body,h1, h2, h3, h4, h5, h6, hr, p, blockquote, /* structural elements 结构元素 */
+dl, dt, dd, ul, ol, li, /* list elements 列表元素 */
+pre, /* text formatting elements 文本格式元素 */
+fieldset, lengend, button, input, textarea, /* form elements 表单元素 */
+th, td { /* table elements 表格元素 */
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    outline-style: none;
+    font-weight: 300;
+}
+textarea {
+    resize: none;
+    outline-style: none;
+}
+
+h1 { font-size: 18px; /* 18px / 12px = 1.5 */ }
+h2 { font-size: 16px; }
+h3 { font-size: 14px; }
+h4, h5, h6 { font-size: 100%; }
+
+address, cite, dfn, em, var { font-style: normal; } /* 将斜体扶正 */
+code, kbd, pre, samp, tt { font-family:  "Microsoft YaHei" } /* 统一等宽字体 */
+small { font-size: 12px; } /* 小于 12px 的中文很难阅读，让 small 正常化 */
+
+/* 重置列表元素 */
+ul, ol { list-style: none; }
+
+/* 重置文本格式元素 */
+a { text-decoration: none;color: #666; }
+a:hover { color: red; }
+
+abbr[title], acronym[title] { /* 注：1.ie6 不支持 abbr; 2.这里用了属性选择符，ie6 下无效果 */
+    border-bottom: 1px dotted;
+    cursor: help;
+}
+
+q:before, q:after { content: ''; }
+
+/* 重置表单元素 */
+legend { color: #000; } /* for ie6 */
+fieldset, img { border: none; } /* img 搭车：让链接里的 img 无边框 */
+/* 注：optgroup 无法扶正 */
+button, input, select, textarea {
+    font-size: 100%; /* 使得表单元素在 ie 下能继承字体大小 */
+}
+
+/* 重置表格元素 */
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* 重置 hr */
+hr {
+    border: none;
+    height: 1px;
+}
+
+/* 让非ie浏览器默认也显示垂直滚动条，防止因滚动条引起的闪烁 */
+html { overflow-y: scroll; }
+
+strong {font-weight: normal;}
+.clearfix:after{
+        content:"";
+        height: 0;
+        line-height: 0;
+        display: block;
+        visibility: hidden;
+        clear: both;
+    }
+.clearfix{
+    zoom: 1;
+}
+.typePage{
+    padding: 0 40px;
+    margin: 0 auto;
+}
+
+
+@media screen and (min-width: 1280px) {
+    .layout .nav ul {   
+    float: left;
+    margin-left: 200px;
+}
+}
+@media screen and (max-width: 1280px) {
+    .layout .nav ul {   
+    float: left;
+    margin-left: 150px;
+}
+}
+.layout {
+    min-width: 1280px;
+    width: 100%;
+}
+ .layout header {
+    position: relative;
+    width: 1200px;
+    margin: 0 auto;
+    height: 60px;
+    line-height: 60px;
+   
+ }
+ .layout .header {
+    border-bottom: 1px solid #E9E9E9;
+ }
+.layout .logo {
+    float: left;   
+}
+ .layout .logo a{
+    /*margin-left: 20px;*/
+    width: 130px;
+    line-height: 60px;
+    height: 60px;
+    float: left;
+    display: inline-block;
+    text-indent: -5000px;
+    background: url("../images/imfbp_logo_color.png") no-repeat left center;
+    background-size: 130px;
+ }
+
+.layout .nav {
+    height: 60px;
+}
+
+.layout .nav ul li {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    float: left;
+}
+.layout .nav ul li a {
+    padding: 17px 20px;    
+}
+
+.layout .nav ul .active a {
+    background: #f8f8f8;
+    color: red;
+    border-bottom: 5px solid red;
+    border-top: 5px solid transparent;
+    color: red;
+}
+
+
+.layout .nav .search {
+    margin-left: 60px;
+    float: left;
+}
+
+.layout .search {
+    height: 30px;   
+    position: relative;    
+}
+
+.layout .search input {
+    outline-style: none;
+    padding-left: 10px;
+    padding-right: 30px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    height: 30px;
+    width: 160px;
+    border: 1px solid #999999;
+    border-radius: 5px;
+}
+.layout .search input:focus{
+    width: 180px;
+    margin-left: -20px;
+    border-color: rgb(27, 168, 237);
+}
+.layout .search i {
+    width: 17px;
+    height: 17px;
+    background: url("../images/search.png") no-repeat;
+    display: inline-block;
+    position: absolute;
+    right: 10px;
+    top: 70%;
+    font-size: 18px;
+    color: #b8b8b8;
+}
+.layout .login {
+        display: none;
+        height: 60px;
+        float: right;
+}
+.layout .login a {
+    height: 60px;   
+    display: inline-block;  
+}
+.layout .login a:nth-child(2){
+    width: 80px;
+    color: #fff;
+    text-align: center;
+    background-color: red;
+    margin-right: 0px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    margin-left: 10px;
+    font-weight: 700;
+}
+*{
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+.layout footer {
+    width: 100%;
+    min-width: 1200px;
+    background: rgb(247, 247, 247) none repeat scroll 0% 0%;
+    height: 291px;
+    padding-top: 28px;
+}
+.layout footer>div{
+    min-width: 960px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.layout footer dl {
+    width: 10%;
+    float: left;   
+    margin-bottom: 10px;
+}
+.layout footer dl:nth-child(n+4){
+  width: 30%;
+}
+.layout footer dd{
+  margin-top: 20px !important;
+  line-height: 18px;
+}
+.layout footer dl:last-child{
+  float: right; 
+  
+}
+.layout footer dl:last-child img{
+  float: left;
+  vertical-align: middle;
+  margin-right: 13px;
+}
+.layout footer dl:last-child dt h4{
+  font-family: "Microsoft YaHei";
+    font-size: 14px;
+    color: #666666 !important;
+}
+.layout footer dl:last-child dt p{
+   font-family: "Microsoft YaHei";
+    font-size: 29px;
+    color: rgb(102, 102, 102);
+    font-weight: bold;
+    text-align: left;
+}
+.layout footer dl:last-child dd{
+    width: 300px;
+    height: 55px;   
+    margin-top: 28px;
+   font-family: "Microsoft YaHei";
+    font-size: 12px;
+    color: #666666;
+}
+.layout footer dl:last-child dd p{
+    text-align: left;
+     color: #666666;
+     margin-bottom: 0;
+
+}
+.layout  footer dd {
+    margin: 0;
+}
+
+.layout footer p {
+    text-align: center;
+   font-family: "Microsoft YaHei";
+    font-size: 12px;
+    color: #999999;
+    margin-bottm: 10px;
+}
+
+.w {
+    min-width: 1200px;
+    padding: 0 40px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+  .personalInfor{
+    float: right;
+    margin-right: 50px;
+    position: relative;
+  }
+  .personalInfor h4{
+    width: 184px !important;
+    height: 58px;
+    font-size: 14px !important;
+    font-weight: 400;
+    line-height: 58px;
+    text-align: center;
+    cursor: pointer;
+  }
+  .personalInfor h4 i{
+    margin-left: 10px;
+    font-weight: 400;
+    font-size: 12px;
+  }
+  .personalInfor .account{ 
+    position: absolute;
+    top: 60px;
+    left: 30px;
+    text-align: center;
+    width: 118px;
+    background: #fff;
+    border: 1px solid  #e9e9e9;
+    z-index: 33333;
+    display: none;
+  }
+  .personalInfor p{
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+  }
+  .personalInfor p.on{
+
+    border-bottom: 1px  solid #e9e9e9;
+  }
+
+
+.loading i {
+    font-size: 60px;
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: -200px;
+    color: rgba(64, 54, 54, 0.54);
+    margin: auto;
+}
+.loading {
+    left: 0;
+    top: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.51);
+    z-index: 500;
+}
+
+.layout article {
+    position: relative;
+    overflow: hidden;
+}
+p.tips {
+   font-size: 10px;
+   display: inline-block;
+   margin-left: 10px;
+   color: red;
+}
+.modalFrame {
+    width: 100%;
+    height: 100%;   
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: rgba(0,0,0,0.2);
+    z-index: 10000;
+}
+.modalFrame div {
+    border-radius: 5px;
+    -webkit-box-shadow: 1px 1px 1px 1px #fff;
+            box-shadow: 1px 1px 1px 1px #fff;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    padding: 60px 40px 30px;
+    width: 300px;
+    height: 200px;
+    background: #fff;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    text-align: center;    
+}
+.modalFrame h4  {
+   margin-bottom: 40px;
+    font-weight: 700;
+    font-size: 20px;    
+}
+.modalFrame button {
+    border: none;
+    outline-style: none;
+    width: 80px;
+    height: 36px;
+    line-height: 36px;    
+    background: #8CD4E6;
+    color: #fff;
+    font-size: 14px;
+    margin-left: 20px;
+    border-radius: 5px;
+}
+

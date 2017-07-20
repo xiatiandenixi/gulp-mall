@@ -1,0 +1,191 @@
+                <div class="sale-size">                                       
+                 <% if(data.mer.market == 4){ %>                 
+                   <div class="interview">
+                      <div class="sale-select" style="margin-bottom: 20px;">
+                    <label for="">订购方式</label>
+                    <div>
+                      <select name="" id="" disabled="disabled" style="background: #eee;">                     
+                      <option value="0">面议</option>    
+                    </select>
+                    <i class="fa fa-angle-down"></i>
+                    </div>                    
+                  </div>      
+                       <ul class="period" style="display: none;">
+                    <li>
+                      <label for="">规格</label>
+                      <i ></i><span>30人</span>
+                      <i ></i><span>50人</span>
+                      <i></i><span>100人</span>
+                    </li>
+                    <li>
+                      <label for="">概述</label>
+                      <i ></i><span>一个月</span>
+                      <i ></i><span>三个月</span>
+                      <i></i><span>一年</span>
+                    </li>
+                    <li>
+                      <label for="">价格</label>
+                     <table>  
+                     <tr>
+                  <td>30人</td>
+                  <td>一个月</td>
+                  <td><input type="number" min= 1 placeholder="请输入价格" disabled="disabled"><span>元</span></td>
+              </tr>
+              <tr>
+                  <td>30人</td>
+                  <td>三个月</td>
+                 <td><input type="number" min= 1  placeholder="请输入价格" disabled="disabled"><span>元</span></td>
+              </tr>
+                <tr>
+                  <td>50人</td>
+                  <td>三个月</td>
+                  <td><input type="number" min= 1  placeholder="请输入价格" disabled="disabled"><span>元</span></td>
+              </tr>
+              </table>
+                    </li>
+                  </ul>                               
+                   </div>
+                    <% }else{ %>
+                      <div class="sale-select" style="margin-bottom: 20px;">
+                    <label for="">订购方式</label>
+                    <div>
+                      <select name="" id="">                     
+                      <option value="0">面议</option>
+                       <option value="1" selected="selected">按周期</option>      
+                    </select>
+                    <i class="fa fa-angle-down"></i>
+                    </div>
+                  </div>     
+                     <div class="interview" style="display: none;">
+                       <ul  style="display: none;">
+                    <li>
+                      <label for="">规格</label>
+                      <i ></i><span>30人</span>
+                      <i ></i><span>50人</span>
+                      <i></i><span>100人</span>
+                    </li>
+                    <li>
+                      <label for="">概述</label>
+                      <i ></i><span>一个月</span>
+                      <i ></i><span>三个月</span>
+                      <i></i><span>一年</span>
+                    </li>
+                    <li>
+                      <label for="">价格</label>
+                     <table>  
+                     <tr>
+                  <td>30人</td>
+                  <td>一个月</td>
+                  <td><input type="number" min= 1  placeholder="请输入价格" disabled="disabled"><span>元</span></td>
+              </tr>
+              <tr>
+                  <td>30人</td>
+                  <td>三个月</td>
+                 <td><input type="number" min= 1   placeholder="请输入价格" disabled="disabled"><span>元</span></td>
+              </tr>
+                <tr>
+                  <td>50人</td>
+                  <td>三个月</td>
+                  <td><input type="number" min= 1   placeholder="请输入价格" disabled="disabled"><span>元</span></td>
+              </tr>
+              </table>
+                    </li>
+                  </ul>                                                
+                   </div>
+                  <% if(!data.spts.length){ %> 
+                  <ul class="period">
+                    <li>
+                      <label for="">规格</label>
+                      <i class="active"></i><span>30人</span>
+                      <i class="active"></i><span>50人</span>
+                      <i></i><span>100人</span>
+                    </li>
+                    <li>
+                      <label for="">概述</label>
+                      <i class="active"></i><span>一个月</span>
+                      <i class="active"></i><span>三个月</span>
+                      <i></i><span>一年</span>
+                    </li>
+                    <li>
+                      <label for="">价格</label>
+                      <table>
+                      </table>
+                    </li>
+                  </ul>
+                  <% }else { %>
+                    <ul class="period">                    
+                    <li>
+                     <label for="">规格</label>                                  
+                      <i class=<%= data.sptNames[0] == "30人" ? "active" : "" %>></i><span>30人</span>
+                      <i class=<%=(data.sptNames[1] || data.sptNames[0])== "50人" ? "active" : "" %>></i><span>50人</span>
+                      <% if((data.sptNames[0] || data.sptNames[1] || data.sptName[2]) == "100人") { %>
+                      <i class="active" ></i><span>100人</span>
+                      <% }else { %>
+                      <i></i><span>100人</span>
+                      <% } %>                     
+                    </li>
+                    <li>
+                      <label for="">概述</label>
+                       <i class=<%= data.timeLimts[0] == "一个月" ? "active" : "" %>></i><span>一个月</span>
+                      <i class=<%=(data.timeLimts[1] || data.timeLimts[0])== "三个月" ? "active" : "" %>></i><span>三个月</span>
+                       <% if((data.timeLimts[0] || data.timeLimts[1] || data.timeLimts[2]) == "一年") { %>
+                      <i class="active" ></i><span>一年</span>
+                      <% }else { %>
+                      <i></i><span>一年</span>
+                      <% } %>                     
+                    </li>
+                    <li>
+                  
+                      <label for="">价格</label>
+                      <table>                       
+                        <% for(var i = 0; i < data.spts.length; i++){ %>
+                          <tr>
+                            <td><%= data.spts[i].sptName %></td>
+                            <td><%=data.spts[i].timeLimt %></td>
+                            <td><input type="number" min= 1 value=<%= data.spts[i].price %>  placeholder="请输入价格"><span>元</span></td>
+                          </tr>
+                        <% } %>
+                      </table>
+                    </li>
+                  </ul>
+                  <% } %>                 
+                  <div class="sell" style="display: none;">
+                    <h4>
+                  <label for="">价格</label>
+                  <i></i>
+                  </h4>
+                    <ul>
+                      <li class="first-li">
+                        <input type="number"> 元
+                        <input type="number" >次 <i></i> </li>
+                    </ul>
+                  </div>
+                  <% if(data.mer.isFree == "1"){ %> 
+                   <div class="free-day" style="margin-top: 30px;" data="a">
+                    <i class="active" style="margin-left: 30px;"></i>
+                    <span>允许试用</span>
+                    <label for="">试用天数</label>
+                    <input type="number" value=<%=data.mer.freeTimelimit %>>
+                  </div>
+                  <% }else if(data.mer.isFree == "0")  { %>
+                     <div class="free-day" style="margin-top: 30px;" data="b">
+                    <i style="margin-left: 30px;"></i>
+                    <span>允许试用</span>
+                    <label for="">试用天数</label>
+                    <input type="number" disabled="disabled">
+                  </div>
+                  <% }else{ %>
+                    <div class="free-day" style="margin-top: 30px;" data="c">
+                    <i class="active" style="margin-left: 30px;"></i>
+                    <span>允许试用</span>
+                    <label for="">试用天数</label>
+                    <input type="number">
+                  </div>
+                    <% }} %>            
+                </div>
+                <div class="step-btn" id="saleRule" style="margin-left: 300px;">
+                    <button>上一步</button>
+                    <button>提交审核</button>
+                  </div>
+               
+

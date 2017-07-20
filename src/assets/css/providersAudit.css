@@ -1,0 +1,317 @@
+*{
+  font-style: normal;
+}
+body{
+  height:100%;
+}
+html{
+  height:100%;
+}
+.layout{
+  height:100%;
+}
+.contentBgc{
+  background:#F8F8F8;
+}
+.contentBgc .content{
+  background:#fff;
+  border-radius: 8px;
+  height:100%;
+  padding:20px 90px;
+  position:relative;
+}
+
+.contentBgc .Request{
+  position:absolute;
+  left: 500px;
+  bottom: 40px;
+  width:160px;
+  height:36px;
+  background:#DD3730;
+  border-radius: 5px;
+  color:#fff;
+  text-align: center;
+  line-height: 36px;
+  cursor: pointer;
+  border:1px solid transparent;
+  outline:none;
+}
+.failureCause{
+  color:#DD3730;
+}
+#failureCause label{
+  color:#DD3730;
+  margin-right:10px;
+}
+.failureCause{
+  float: left;
+  width:700px;
+}
+#authentication{
+  width:88px;
+  height:88px;
+  position:absolute;
+  right:62px;
+  top:28px;
+}
+
+.reminder {
+  position: absolute;
+  left: 110px;
+  top: -35px;
+  width: 968px;
+  font-size: 12px;
+  color: #999999;
+}
+.basicContent{
+  background:#fff;
+  height: 825px;
+  width: 1280px;
+  margin: 0px auto;
+  padding:30px;
+  padding-right:0px;
+}
+.basicContent h3{
+  color:#333;
+  height:30px;
+  width:80px;
+  margin-bottom: 20px;
+  font-size:20px;
+  font-weight:bold;
+}
+.basicContent p{
+  margin-bottom: 20px;
+  margin-left: 20px;
+  position:relative;
+}
+.basicContent p em{
+  position:absolute;
+  left: 302px;
+  top: 5px;
+  color:#DD3730;
+  font-size: 12px;
+}
+.basicContent p label {
+    color: #2A2A2A;
+    font-size: 14px;
+    display: inline-block;
+    width: 114px;
+    text-align: right;
+    padding-right: 18px;
+}
+.basicContent p input{
+  padding-left: 10px;
+  border: 1px solid #999;
+  border-radius: 5px;
+  height: 30px;
+  outline: none;
+  color:black;
+}
+.basicContent p input:focus {
+  border: 1px solid rgb(27, 168, 237);
+}
+.basicContent p i{
+    font-size: 17px;
+    color: #DD3730;
+    font-weight: 500;
+    position: relative;
+    font-style: normal;
+    top: 3px;
+    right: -18px;
+}
+.basicContent select{
+  width:120px;
+  height:30px;
+  border-radius:5px;
+  outline:none;
+  border:1px solid #999;
+  margin-right: 10px;
+}
+.contact{
+  overflow:hidden;
+  width: 200px;
+  height: 100px;
+  position: absolute;
+  right: 222px;
+  bottom: 10px;
+}
+#contactImg{
+  float: left;
+  width: 70px;
+  height: 50px;
+  font-size: 14px;
+  color: #2A2A2A;
+  line-height: 20px;
+  margin-top: 20px;
+} 
+#contacFile{
+  float: right;
+  width: 110px;
+  height:98px;
+}
+#contacFile span{
+  font-size: 12px;
+  color: #FFFFFF;
+  background: #1BA8ED;
+  border-radius: 5px;
+  display:block;
+  width: 60px;
+  height: 20px;
+  line-height: 20px;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 5px;
+  cursor: pointer;
+}
+.contacImgFile{
+  width: 100px;
+  height: 70px;
+  border: 2px solid #DBDBDB;
+  border-radius: 5px;
+}
+#industry-error{
+  left: 238px;
+  top: 4px;
+}
+#city-error{
+  left: 253px;
+  top: 30px;
+}
+#province-error{
+  left: 118px;
+  top: 30px;
+}
+#officeAddress-error{
+  left: 370px;
+  top: 6px;
+}
+
+#companyWebsite-error{
+  left: 374px;
+}
+
+.basicContent .office{
+  width:100%;
+}
+#officeAddress{
+  position: relative;
+  left: 114px;
+  top: 0px;
+  width: 254px;
+}
+
+#companyWebsite{
+  width: 254px;
+}
+.enterpriseInfo{
+  overflow: hidden;
+}
+.enterpriseInfo p{
+  margin-left: 20px;
+}
+.enterpriseInfo p em{
+  color:#DD3730;
+}
+
+.basicContent .licenseNumber{
+  width:100%;
+}
+.basicContent .registeredAssets{
+  width:100%;
+}
+.contentBgc .uploadImg{
+  overflow: hidden;
+  width: 530px;
+  height: 460px;
+  position: absolute;
+  right: 120px;
+  bottom: 40px;
+}
+#fileName{
+  position:absolute;
+  width: 66px;
+  height: 50px;
+  font-size: 14px;
+  color: #2A2A2A;
+  line-height: 20px;
+  top: 50%;
+  margin-top:-25px;
+  left:0px;
+}
+#videoFile{
+  position:absolute;
+  right:0px;
+  top:0px;
+}
+#videoFile span{
+  font-size: 14px;
+  color: #FFFFFF;
+  background: #1BA8ED;
+  border-radius: 5px;
+  display: block;
+  width: 100px;
+  height: 33px;
+  line-height: 33px;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 5px;
+  cursor: pointer;
+}
+
+.imgFile img{
+  width: 468px;
+  height: 415px;
+  border: 2px solid #DBDBDB;
+  border-radius: 5px;
+}
+#basicPhone{
+  background:#fff;
+  border: 1px solid transparent;
+  -webkit-box-shadow:none;
+          box-shadow:none;
+  padding-left: 0px;
+}
+.uploadImg i{
+  position:relative;
+  left:108px;
+  top:0px;
+  color:#DD3730;
+  cursor:pointer;
+  opacity: 0;
+}
+#toast-container{
+  left:50%;
+  margin-left:-150px;
+  top:120px;
+}
+#basicName-error{
+  left:162px;
+}
+#basicMail-error{
+  left:300px;
+}
+#failureCause{
+  display:none;
+}
+#auditName-error{
+  left: 300px;
+  top: 5px;
+}
+#auditMail-error{
+  left: 300px;
+  top: 5px;
+}
+
+
+.contentBgc select {
+   /*为下拉小箭头留出一点位置，避免被文字覆盖*/
+   /*// padding-right:34px;*/
+   padding-left: 10px;
+   /*将默认的select选择框样式清除*/
+   appearance:none;
+   -moz-appearance:none;
+   -webkit-appearance:none;
+   background: url("../images/arrow.png") no-repeat scroll right center transparent;
+}
+.contentBgc select::-ms-expand { display: none; }
+
